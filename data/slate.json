@@ -1,0 +1,178 @@
+{
+  "slate_version": "1.1",
+  "locked": "2026-06-22",
+  "brand_profile": {
+    "name": "GenericCPG",
+    "description": "Mass-market CPG brand with broad family and adult consumer base. Legacy brand with nostalgia equity. Targets 18-49 with Gen Z extension goal. Seeks cultural relevance, awareness amplification, and sales lift through entertainment partnerships.",
+    "positioning": "Iconic, approachable, culturally present across generations",
+    "audience_priorities": ["families", "Gen Z", "18-49 adults", "nostalgia consumers"],
+    "partnership_goals": ["brand awareness", "cultural relevance", "retail lift", "earned media"]
+  },
+  "titles": [
+    {
+      "id": "T01",
+      "title": "Spider-Man: Brand New Day",
+      "studio": "Sony / Marvel Studios",
+      "release_date": "2026-07-31",
+      "release_year": 2026,
+      "scoring_role": "high_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action, real-world New York setting. Hero product placement achievable in practical scenes.",
+      "notes": "Global IP, broad demographic, Gen Z and millennial core. Strong comp data from prior Spider-Man films."
+    },
+    {
+      "id": "T02",
+      "title": "Avengers: Doomsday",
+      "studio": "Marvel Studios",
+      "release_date": "2026-12-18",
+      "release_year": 2026,
+      "scoring_role": "obvious_great_fit",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action, real-world grounding across multiple settings. MCU precedent for brand integration in practical scenes.",
+      "notes": "MCU Phase 6 opener. Robert Downey Jr. return as Doctor Doom. Broadest possible audience. Slam-dunk high scorer."
+    },
+    {
+      "id": "T03",
+      "title": "Cat in the Hat",
+      "studio": "Warner Bros.",
+      "release_date": "2026-11-06",
+      "release_year": 2026,
+      "scoring_role": "high_scorer",
+      "integration_feasible": false,
+      "integration_feasibility_note": "Fully animated. No real-world setting. In-film hero integration not possible regardless of fee.",
+      "notes": "Family, nostalgia IP, broad household reach. Strong CPG fit for co-promotion but no integration path."
+    },
+    {
+      "id": "T04",
+      "title": "Focker In-Law",
+      "studio": "Paramount / Universal",
+      "release_date": "2026-11-25",
+      "release_year": 2026,
+      "scoring_role": "mid_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action domestic comedy. Real-world kitchen and home settings support CPG hero placement.",
+      "notes": "Legacy adult comedy franchise. Broad adult audience but skews older. Mid-tier fit for CPG with family positioning."
+    },
+    {
+      "id": "T05",
+      "title": "Cocomelon the Movie",
+      "studio": "Universal",
+      "release_date": "2027-02-26",
+      "release_year": 2027,
+      "scoring_role": "obvious_low_scorer",
+      "integration_feasible": false,
+      "integration_feasibility_note": "Fully animated toddler IP. No real-world setting. In-film hero integration not possible.",
+      "notes": "Toddler/preschool IP. Too narrow and young for most CPG brand positioning. Demonstrates system correctly scoring obvious misfit."
+    },
+    {
+      "id": "T06",
+      "title": "The Thomas Crown Affair",
+      "studio": "MGM",
+      "release_date": "2027-03-05",
+      "release_year": 2027,
+      "scoring_role": "low_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action prestige thriller. Real-world luxury settings technically support integration; brand tone fit is the limiting factor.",
+      "notes": "Prestige adult thriller. Narrow upscale demo. Low mass-market CPG relevance."
+    },
+    {
+      "id": "T07",
+      "title": "K-Pop Superstar",
+      "studio": "Paramount",
+      "release_date": "2027-02-12",
+      "release_year": 2027,
+      "scoring_role": "edge_case",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action music industry setting. Real-world environments support hero placement in backstage and performance prep scenes.",
+      "notes": "High Gen Z cultural signal. Uncertain fit for legacy CPG brand. System should surface score split between cultural dimension (high) and brand legacy dimension (low). Edge case."
+    },
+    {
+      "id": "T08",
+      "title": "Untitled Judd Apatow / Glen Powell Film",
+      "studio": "Universal",
+      "release_date": "2027-02-01",
+      "release_year": 2027,
+      "scoring_role": "edge_case",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Adult comedy, presumed live-action real-world setting based on Apatow filmography. Flag for confirmation when title is announced.",
+      "notes": "No confirmed title. Adult comedy with strong cast signal. Real-world complication: system must handle incomplete metadata. Edge case for low-confidence flag."
+    },
+    {
+      "id": "T09",
+      "title": "Avengers: Secret Wars",
+      "studio": "Marvel Studios",
+      "release_date": "2027-12-17",
+      "release_year": 2027,
+      "scoring_role": "high_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action with MCU real-world grounding. MCU precedent for brand integration in practical scenes across franchises.",
+      "notes": "MCU Phase 6 finale. 40th MCU film. Russo Brothers return. Highest-profile 2027 title. Strong high scorer."
+    },
+    {
+      "id": "T10",
+      "title": "The Batman: Part II",
+      "studio": "Warner Bros. / DC Studios",
+      "release_date": "2027-10-01",
+      "release_year": 2027,
+      "scoring_role": "edge_case",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action noir. Real-world Gotham setting. Integration technically feasible; dark tone limits brand fit options. Flag delay risk.",
+      "notes": "Tonally dark, adult-skewing. Strong cultural profile but grounded noir tone may conflict with CPG brand warmth. Delay risk noted (omitted from WB CinemaCon 2027 sizzle). System should flag low confidence on ROI given schedule uncertainty."
+    },
+    {
+      "id": "T11",
+      "title": "The Lord of the Rings: The Hunt for Gollum",
+      "studio": "Warner Bros. / New Line Cinema",
+      "release_date": "2027-12-17",
+      "release_year": 2027,
+      "scoring_role": "edge_case",
+      "integration_feasible": false,
+      "integration_feasibility_note": "Fantasy world setting (Middle-earth). No real-world environment. In-film hero integration not possible regardless of fee.",
+      "notes": "Same release date as Avengers: Secret Wars. System should surface date collision and flag both for human gate review. Legacy IP with strong nostalgia equity but niche fantasy demo."
+    },
+    {
+      "id": "T12",
+      "title": "Frozen 3",
+      "studio": "Walt Disney Animation Studios",
+      "release_date": "2027-11-24",
+      "release_year": 2027,
+      "scoring_role": "high_scorer",
+      "integration_feasible": false,
+      "integration_feasibility_note": "Fully animated fantasy world. Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.",
+      "notes": "Thanksgiving window. Franchise comp data: Frozen 1 $1.28B, Frozen 2 $1.45B globally. Family and nostalgia sweet spot. Gen Z nostalgia pull confirmed. Strong co-promotion candidate; no integration path."
+    },
+    {
+      "id": "T13",
+      "title": "Superman: Man of Tomorrow",
+      "studio": "Warner Bros. / DC Studios",
+      "release_date": "2027-07-09",
+      "release_year": 2027,
+      "scoring_role": "high_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Live-action, real-world Metropolis setting. DCU precedent for brand integration in civilian and workplace scenes.",
+      "notes": "Global IP, James Gunn DCU launch sequel. Family-adjacent, broad demo. Strong brand safety profile."
+    },
+    {
+      "id": "T14",
+      "title": "A Minecraft Movie Sequel",
+      "studio": "Warner Bros.",
+      "release_date": "2027-07-23",
+      "release_year": 2027,
+      "scoring_role": "high_scorer",
+      "integration_feasible": true,
+      "integration_feasibility_note": "Sequel maintains live-action / real-world framing from first film (characters enter game world from real-world setting). Integration feasible in real-world scenes. Flag for review if sequel shifts to fully in-game setting.",
+      "notes": "First film was a breakout 2025 hit. Strong audience data available for comp lookup. Family, Gen Z, gamer crossover. Clean ROI grounding."
+    },
+    {
+      "id": "T15",
+      "title": "Narnia: The Magician's Nephew",
+      "studio": "Netflix",
+      "release_date": "2027-01-01",
+      "release_year": 2027,
+      "scoring_role": "edge_case",
+      "integration_feasible": false,
+      "integration_feasibility_note": "Fantasy world setting (Narnia). Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.",
+      "notes": "Netflix 2027 tentpole. Family, nostalgia, global IP. Limited comp data vs. theatrical releases. Strong co-promotion candidate; no integration path."
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "human_review_queue": [
+    {
+      "title_id": "T02",
+      "title": "Avengers: Doomsday",
+      "scoring_role": "obvious_great_fit",
+      "final_scorecard": "TITLE: Avengers: Doomsday\nTOTAL SCORE: 85/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 9/10 \u2014 This film targets a broad 4-quadrant global audience, including families and adults 18-49, with a strong potential for Gen Z engagement due to the MCU's broad appeal and the confirmed return of Robert Downey Jr.\n2. Brand alignment and safety: 7/10 \u2014 The film's heroic and aspirational themes align with a broad CPG brand, although the action-adventure genre is slightly removed from a purely \"warm, family-friendly\" positioning.\n3. Cultural moment and earned media potential: 10/10 \u2014 As a major MCU event with anticipated returns of key characters, this film is guaranteed to generate massive social conversation, extensive press coverage, and significant fan engagement, especially with the confirmed presence of Robert Downey Jr. as Doctor Doom.\n4. Activation runway and timing: 9/10 \u2014 With 18 months until release (June 2026 to December 2026), a full co-branded product development including limited-edition SKUs is possible.\n5. Integration potential: 7/10 \u2014 Integration is possible in this live-action theatrical film given the genre precedent, although specific placement opportunities will depend on the film's narrative and confirmed director's approach to brand integration.\n6. Franchise activation precedent: 7/10 \u2014 Franchise-specific comp data for the Avengers series is well-documented and supports high activation ceilings, but MCU saturation introduces some uncertainty into direct comp applicability.\n7. Talent alignment and promotional commitment: 9/10 \u2014 The confirmed return of Robert Downey Jr. as a pivotal character, combined with the overall star power of the Avengers franchise, provides immense promotional capital and a strong track record of talent engagement with past MCU partners.\n8. Relationship fostering opportunity: 9/10 \u2014 Partnering with a major MCU franchise opens access to a vast studio ecosystem with multiple upcoming titles and involves talent and filmmakers known for collaborative brand partnerships.\n9. Key market activation fit: 9/10 \u2014 As a major MCU tentpole, \"Avengers: Doomsday\" is expected to have significant global marketing support with premieres in key US markets like Los Angeles and international hubs such as London, providing ample opportunities for brand activation.\n10. Quality and creative potential: 9/10 \u2014 The brand's values of aspiration and broad appeal can easily connect with the heroic themes and massive cultural moment of an Avengers film, creating an authentic narrative bridge.\n\nACC IN-FILM ROI PROJECTION:\nIntegration Feasibility: Yes. Live-action, real-world grounding across multiple settings. MCU precedent for brand integration in practical scenes.\nCombined Viewership Estimate: 200,000,000\nTop ROI Scenarios:\n- Scenario: 1 hero integration. Integration Fee: $300,000. ROI Multiplier: 23.1267 (Excellent)\n- Scenario: 2 hero integration. Integration Fee: $600,000. ROI Multiplier: 23.1267 (Excellent)\n- Scenario: 3 hero integration. Integration Fee: $1,000,000. ROI Multiplier: 20.714 (Excellent)\n\nSCORING NOTES:\nThis is a clean score with no flags present. The project is routed to human review due to exceeding the 65-point threshold.",
+      "roi_result": {
+        "title_id": "T02",
+        "title": "Avengers: Doomsday",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action, real-world grounding across multiple settings. MCU precedent for brand integration in practical scenes.",
+        "combined_viewership": 200000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 7238000.0,
+            "roi_multiplier": 23.1267,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 14476000.0,
+            "roi_multiplier": 23.1267,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 21714000.0,
+            "roi_multiplier": 20.714,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T02\nTITLE: Avengers: Doomsday\n\nD1 - Audience reach and demographic fit: 9 \u2014 This film targets a broad 4-quadrant global audience, including families and adults 18-49, with a strong potential for Gen Z engagement due to the MCU's broad appeal and the confirmed return of Robert Downey Jr.\nD9 - Key market activation fit: 9 \u2014 As a major MCU tentpole, \"Avengers: Doomsday\" is expected to have significant global marketing support with premieres in key US markets like Los Angeles and international hubs such as London, providing ample opportunities for brand activation.\n\nPARTIAL_SCORE: 18\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T02\nTITLE: Avengers: Doomsday\n\nD2 - Brand alignment and safety: 7/10 \u2014 The film's heroic and aspirational themes align with a broad CPG brand, although the action-adventure genre is slightly removed from a purely \"warm, family-friendly\" positioning.\nD5 - Integration potential: 7/10 \u2014 Integration is possible in this live-action theatrical film given the genre precedent, although specific placement opportunities will depend on the film's narrative and confirmed director's approach to brand integration.\nD8 - Relationship fostering opportunity: 9/10 \u2014 Partnering with a major MCU franchise opens access to a vast studio ecosystem with multiple upcoming titles and involves talent and filmmakers known for collaborative brand partnerships.\nD10 - Quality and creative potential: 9/10 \u2014 The brand's values of aspiration and broad appeal can easily connect with the heroic themes and massive cultural moment of an Avengers film, creating an authentic narrative bridge.\n\nPARTIAL_SCORE: 32\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T02\nTITLE: Avengers: Doomsday\n\nD3 - Cultural moment and earned media potential: 10 \u2014 As a major MCU event with anticipated returns of key characters, this film is guaranteed to generate massive social conversation, extensive press coverage, and significant fan engagement, especially with the confirmed presence of Robert Downey Jr. as Doctor Doom.\nD7 - Talent alignment and promotional commitment: 9 \u2014 The confirmed return of Robert Downey Jr. as a pivotal character, combined with the overall star power of the Avengers franchise, provides immense promotional capital and a strong track record of talent engagement with past MCU partners.\n\nPARTIAL_SCORE: 19\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T02\nTITLE: Avengers: Doomsday\n\nD4 - Activation runway and timing: 9 \u2014 With 18 months until release (June 2026 to December 2026), a full co-branded product development including limited-edition SKUs is possible.\nD6 - Franchise activation precedent: 7 \u2014 Franchise-specific comp data for the Avengers series is well-documented and supports high activation ceilings, but MCU saturation introduces some uncertainty into direct comp applicability.\n\nPARTIAL_SCORE: 16\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: N/A\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis is a clean scorecard, with all internal consistency checks passing.",
+      "consistency_check": {
+        "title": "Avengers: Doomsday",
+        "has_inconsistency": true,
+        "flagged_dimensions": [
+          "D6: run1=7, run2=9, variance=2"
+        ],
+        "run1_scores": {
+          "D1": 9,
+          "D9": 9,
+          "D2": 7,
+          "D5": 7,
+          "D8": 9,
+          "D10": 9,
+          "D3": 10,
+          "D7": 9,
+          "D4": 9,
+          "D6": 7
+        },
+        "run2_scores": {
+          "D1": 9,
+          "D9": 9,
+          "D2": 7,
+          "D5": 7,
+          "D8": 9,
+          "D10": 9,
+          "D3": 10,
+          "D7": 9,
+          "D4": 8,
+          "D6": 9
+        }
+      },
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T08",
+      "title": "Untitled Judd Apatow / Glen Powell Film",
+      "scoring_role": "edge_case",
+      "final_scorecard": "TITLE: Untitled Judd Apatow / Glen Powell Film\nTOTAL SCORE: 70/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: YES \u2014 D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 6/10 \u2014 This adult comedy with a strong cast signal likely appeals to the core 18-49 demographic but may have limited reach with families and Gen Z.\n2. Brand alignment and safety: 7/10 \u2014 This adult comedy with a real-world setting aligns well with the brand's broad 18-49 target, though its adult focus means it's not as strong for the family segment as other potential partners.\n3. Cultural moment and earned media potential: 6/10 \u2014 The film is an adult comedy with a strong cast signal but lacks the broad, cross-generational appeal or existing fandom necessary to be a significant cultural event.\n4. Activation runway and timing: 8/10 \u2014 20 months to release allows for limited-edition packaging and co-branded content.\n5. Integration potential: 9/10 \u2014 As an adult comedy set in the real world with Judd Apatow's known precedent for authentic integration, there is a high likelihood for natural and valuable brand placement.\n6. Franchise activation precedent: 3/10 \u2014 Comp data relies on genre-level comparables for adult comedies, not specific franchise precedent.\n7. Talent alignment and promotional commitment: 9/10 \u2014 Glen Powell has a strong owned platform, a proven track record as a brand partner, and an aspirational consumer profile that aligns well with promotional opportunities.\n8. Relationship fostering opportunity: 9/10 \u2014 Partnering with a Judd Apatow project opens significant access to Universal's comedy and potentially broader adult-skewing slate, and Apatow and Powell are known for being collaborative with brands.\n9. Key market activation fit: 6/10 \u2014 As an adult comedy with a potentially US-centric release, it likely has a primary US premiere but may lack the global footprint to support broad international activation.\n10. Quality and creative potential: 7/10 \u2014 The adult comedy genre and the known talent of Apatow and Powell provide a strong foundation for a coherent and authentic narrative connection with the brand, likely resulting in engaging co-branded content.\n\nACC IN-FILM ROI PROJECTION:\nViewership Estimate: 35,000,000\nScenario 1 (1 hero): Integration Fee $300,000, Media Value $1,266,650, ROI Multiplier 3.2222\nScenario 2 (2 hero): Integration Fee $600,000, Media Value $2,533,300, ROI Multiplier 3.2222\nScenario 3 (3 hero): Integration Fee $1,000,000, Media Value $3,799,950, ROI Multiplier 2.7999\n\nSCORING NOTES:\nThe score for this film is flagged as low confidence primarily due to the limited comparative data for Dimension 6, relying on general adult comedy trends rather than specific franchise precedent. A human gate reviewer should weigh the D6 score heavily and note the ROI projection's request for confirmation of the film's premise once officially announced. No consistency issues were detected across dimensions for this title.",
+      "roi_result": {
+        "title_id": "T08",
+        "title": "Untitled Judd Apatow / Glen Powell Film",
+        "integration_feasible": true,
+        "feasibility_note": "Adult comedy, presumed live-action real-world setting based on Apatow filmography. Flag for confirmation when title is announced.",
+        "combined_viewership": 35000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 1266650.0,
+            "roi_multiplier": 3.2222,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 2533300.0,
+            "roi_multiplier": 3.2222,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 3799950.0,
+            "roi_multiplier": 2.7999,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T08\nTITLE: Untitled Judd Apatow / Glen Powell Film\n\nD1 - Audience reach and demographic fit: 6 \u2014 This adult comedy with a strong cast signal likely appeals to the core 18-49 demographic but may have limited reach with families and Gen Z.\nD9 - Key market activation fit: 6 \u2014 As an adult comedy with a potentially US-centric release, it likely has a primary US premiere but may lack the global footprint to support broad international activation.\n\nPARTIAL_SCORE: 12\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T08\nTITLE: Untitled Judd Apatow / Glen Powell Film\n\nD2 - Brand alignment and safety: 7/10 \u2014 This adult comedy with a real-world setting aligns well with the brand's broad 18-49 target, though its adult focus means it's not as strong for the family segment as other potential partners.\nD5 - Integration potential: 9/10 \u2014 As an adult comedy set in the real world with Judd Apatow's known precedent for authentic integration, there is a high likelihood for natural and valuable brand placement.\nD8 - Relationship fostering opportunity: 9/10 \u2014 Partnering with a Judd Apatow project opens significant access to Universal's comedy and potentially broader adult-skewing slate, and Apatow and Powell are known for being collaborative with brands.\nD10 - Quality and creative potential: 7/10 \u2014 The adult comedy genre and the known talent of Apatow and Powell provide a strong foundation for a coherent and authentic narrative connection with the brand, likely resulting in engaging co-branded content.\n\nPARTIAL_SCORE: 32\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent_agent\nTITLE_ID: T08\nTITLE: Untitled Judd Apatow / Glen Powell Film\n\nD3 - Cultural moment and earned media potential: 6/10 \u2014 The film is an adult comedy with a strong cast signal but lacks the broad, cross-generational appeal or existing fandom necessary to be a significant cultural event.\nD7 - Talent alignment and promotional commitment: 9/10 \u2014 Glen Powell has a strong owned platform, a proven track record as a brand partner, and an aspirational consumer profile that aligns well with promotional opportunities.\n\nPARTIAL_SCORE: 15\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T08\nTITLE: Untitled Judd Apatow / Glen Powell Film\n\nD4 - Activation runway and timing: 8 \u2014 20 months to release allows for limited-edition packaging and co-branded content.\nD6 - Franchise activation precedent: 3 \u2014 Comp data relies on genre-level comparables for adult comedies, not specific franchise precedent.\n\nPARTIAL_SCORE: 11\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T09",
+      "title": "Avengers: Secret Wars",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: Avengers: Secret Wars\nTOTAL SCORE: 86/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 9/10 \u2014 This film is a major tentpole with proven broad, multi-generational appeal, aligning perfectly with the brand's target of families, 18-49 adults, and Gen Z.\n2. Brand alignment and safety: 7/10 \u2014 The heroic and aspirational themes of the Avengers franchise align well with a mass-market CPG brand, though the inherent action and global stakes require a slight creative bridge to a warm, approachable positioning.\n3. Cultural moment and earned media potential: 10/10 \u2014 As the 40th film and finale of an MCU saga, Avengers: Secret Wars is poised to be a monumental cultural event with massive global press and social conversation potential, including significant Gen Z engagement.\n4. Activation runway and timing: 9/10 \u2014 There are 18 months until release, enabling full co-branded product development and limited-edition SKU creation.\n5. Integration potential: 5/10 \u2014 While live-action, the massive scale and ensemble nature of an Avengers finale means in-film integration opportunities are possible but likely sparse and must be carefully aligned with the narrative to avoid disrupting the superhero world.\n6. Franchise activation precedent: 9/10 \u2014 Clean franchise-specific comp data is available, with extensive prior CPG partnerships documented for the Marvel Cinematic Universe.\n7. Talent alignment and promotional commitment: 9/10 \u2014 The return of the Russo Brothers and the ensemble cast of established MCU stars provides significant promotional power, with many leads having proven track records in brand partnerships and large social followings.\n8. Relationship fostering opportunity: 9/10 \u2014 Partnering with a major Marvel Studios tentpole, especially one helmed by the returning Russo Brothers known for brand collaboration, provides extensive access to the studio's franchise ecosystem and fosters deep relationships with key creative stakeholders.\n9. Key market activation fit: 10/10 \u2014 As a major MCU finale with precedent for global releases, \"Avengers: Secret Wars\" will undoubtedly have major US and international premieres, offering extensive activation opportunities in key global markets for the brand.\n10. Quality and creative potential: 9/10 \u2014 The epic scope and anticipated themes of an MCU finale offer immediate and authentic narrative connections for a legacy CPG brand, allowing for compelling co-branded content that highlights themes of legacy, heroism, and bringing people together.\n\nACC IN-FILM ROI PROJECTION:\nViewership Estimate: 250,000,000\nScenario '1 hero': Integration Fee: $300,000, ROI Multiplier: 29.16x\nScenario '2 hero': Integration Fee: $600,000, ROI Multiplier: 29.16x\nScenario '3 hero': Integration Fee: $1,000,000, ROI Multiplier: 26.14x\n\nSCORING NOTES:\nNo flags are present for this title, indicating a clean and confident score.",
+      "roi_result": {
+        "title_id": "T09",
+        "title": "Avengers: Secret Wars",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action with MCU real-world grounding. MCU precedent for brand integration in practical scenes across franchises.",
+        "combined_viewership": 250000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 9047500.0,
+            "roi_multiplier": 29.1583,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 18095000.0,
+            "roi_multiplier": 29.1583,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 27142500.0,
+            "roi_multiplier": 26.1425,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T09\nTITLE: Avengers: Secret Wars\n\nD1 - Audience reach and demographic fit: 9 \u2014 This film is a major tentpole with proven broad, multi-generational appeal, aligning perfectly with the brand's target of families, 18-49 adults, and Gen Z.\nD9 - Key market activation fit: 10 \u2014 As a major MCU finale with precedent for global releases, \"Avengers: Secret Wars\" will undoubtedly have major US and international premieres, offering extensive activation opportunities in key global markets for the brand.\n\nPARTIAL_SCORE: 19\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T09\nTITLE: Avengers: Secret Wars\n\nD2 - Brand alignment and safety: 7/10 \u2014 The heroic and aspirational themes of the Avengers franchise align well with a mass-market CPG brand, though the inherent action and global stakes require a slight creative bridge to a warm, approachable positioning.\nD5 - Integration potential: 5/10 \u2014 While live-action, the massive scale and ensemble nature of an Avengers finale means in-film integration opportunities are possible but likely sparse and must be carefully aligned with the narrative to avoid disrupting the superhero world.\nD8 - Relationship fostering opportunity: 9/10 \u2014 Partnering with a major Marvel Studios tentpole, especially one helmed by the returning Russo Brothers known for brand collaboration, provides extensive access to the studio's franchise ecosystem and fosters deep relationships with key creative stakeholders.\nD10 - Quality and creative potential: 9/10 \u2014 The epic scope and anticipated themes of an MCU finale offer immediate and authentic narrative connections for a legacy CPG brand, allowing for compelling co-branded content that highlights themes of legacy, heroism, and bringing people together.\n\nPARTIAL_SCORE: 30\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent_agent\nTITLE_ID: T09\nTITLE: Avengers: Secret Wars\n\nD3 - Cultural moment and earned media potential: 10 \u2014 As the 40th film and finale of an MCU saga, Avengers: Secret Wars is poised to be a monumental cultural event with massive global press and social conversation potential, including significant Gen Z engagement.\nD7 - Talent alignment and promotional commitment: 9 \u2014 The return of the Russo Brothers and the ensemble cast of established MCU stars provides significant promotional power, with many leads having proven track records in brand partnerships and large social followings.\n\nPARTIAL_SCORE: 19\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T09\nTITLE: Avengers: Secret Wars\n\nD4 - Activation runway and timing: 9 \u2014 There are 18 months until release, enabling full co-branded product development and limited-edition SKU creation.\nD6 - Franchise activation precedent: 9 \u2014 Clean franchise-specific comp data is available, with extensive prior CPG partnerships documented for the Marvel Cinematic Universe.\n\nPARTIAL_SCORE: 18\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: N/A\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis scorecard appears internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T12",
+      "title": "Frozen 3",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: Frozen 3\nTOTAL SCORE: 74/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: YES \u2014 2 dimensions scored at or below 4: D5, D7\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 9/10 \u2014 Frozen 3 has a broad, multi-generational appeal hitting families and adults 18-49, with strong confirmed Gen Z nostalgia engagement, directly matching the brand's target demographics.\n2. Brand alignment and safety: 9/10 \u2014 This film's warm, family-friendly, and aspirational IP directly aligns with the brand's heritage and nostalgic positioning, posing no brand safety risk.\n3. Cultural moment and earned media potential: 10/10 \u2014 As a highly anticipated sequel in a beloved franchise with proven global appeal and strong Gen Z nostalgia, \"Frozen 3\" is poised to be a major cultural event generating significant social conversation and press momentum.\n4. Activation runway and timing: 9/10 \u2014 There are 18 months until the film's release, allowing for full co-branded product development.\n5. Integration potential: 1/10 \u2014 Integration is structurally impossible as animated features cannot naturally accommodate real-world brand presence within their world.\n6. Franchise activation precedent: 9/10 \u2014 Clean franchise-specific comp data is available, with prior Disney animated franchise CPG partnerships well-documented for Frozen 1 and Frozen 2.\n7. Talent alignment and promotional commitment: 3/10 \u2014 While the voice cast is recognizable, voice-only animated talent has limited availability for direct promotional engagement, limiting their promotional commitment beyond the film's official campaign.\n8. Relationship fostering opportunity: 7/10 \u2014 This partnership deepens the existing studio relationship with Disney and offers access to a strong near-term slate of family-focused titles.\n9. Key market activation fit: 8/10 \u2014 As a major Disney release, Frozen 3 is expected to have significant US and international premieres, providing strong global activation opportunities for the brand in key markets.\n10. Quality and creative potential: 9/10 \u2014 The brand-film story connection is immediate and authentic, with themes of family and legacy naturally aligning with the brand's own narrative.\n\nACC IN-FILM ROI PROJECTION:\n**LOW CONFIDENCE DUE TO OVERALL SCORE FLAGS.**\nIntegration Feasible: No\nFeasibility Note: Fully animated fantasy world. Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.\nCombined Viewership Estimate: 0.0 (in-film integration not possible)\nScenarios: No scenarios available as in-film integration is not feasible.\n\nSCORING NOTES:\nA low-confidence flag is present because Dimension 5 (Integration Potential) scored 1, and Dimension 7 (Talent Alignment) scored 3. This indicates significant challenges in directly integrating the brand into the animated film and leveraging voice talent for extensive promotion. The human gate reviewer should carefully consider the implications of these low scores, especially the complete lack of in-film integration potential, despite the high overall score driven by strong brand alignment and cultural impact.",
+      "roi_result": {
+        "title_id": "T12",
+        "title": "Frozen 3",
+        "integration_feasible": false,
+        "feasibility_note": "Fully animated fantasy world. Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.",
+        "combined_viewership": 0.0,
+        "scenarios": [],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T12\nTITLE: Frozen 3\n\nD1 - Audience reach and demographic fit: 9 \u2014 Frozen 3 has a broad, multi-generational appeal hitting families and adults 18-49, with strong confirmed Gen Z nostalgia engagement, directly matching the brand's target demographics.\nD9 - Key market activation fit: 8 \u2014 As a major Disney release, Frozen 3 is expected to have significant US and international premieres, providing strong global activation opportunities for the brand in key markets.\n\nPARTIAL_SCORE: 17\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T12\nTITLE: Frozen 3\n\nD2 - Brand alignment and safety: 9 \u2014 This film's warm, family-friendly, and aspirational IP directly aligns with the brand's heritage and nostalgic positioning, posing no brand safety risk.\nD5 - Integration potential: 1 \u2014 Integration is structurally impossible as animated features cannot naturally accommodate real-world brand presence within their world.\nD8 - Relationship fostering opportunity: 7 \u2014 This partnership deepens the existing studio relationship with Disney and offers access to a strong near-term slate of family-focused titles.\nD10 - Quality and creative potential: 9 \u2014 The brand-film story connection is immediate and authentic, with themes of family and legacy naturally aligning with the brand's own narrative.\n\nPARTIAL_SCORE: 26\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T12\nTITLE: Frozen 3\n\nD3 - Cultural moment and earned media potential: 10 \u2014 As a highly anticipated sequel in a beloved franchise with proven global appeal and strong Gen Z nostalgia, \"Frozen 3\" is poised to be a major cultural event generating significant social conversation and press momentum.\nD7 - Talent alignment and promotional commitment: 3 \u2014 While the voice cast is recognizable, voice-only animated talent has limited availability for direct promotional engagement, limiting their promotional commitment beyond the film's official campaign.\n\nPARTIAL_SCORE: 13\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T12\nTITLE: Frozen 3\n\nD4 - Activation runway and timing: 9 \u2014 There are 18 months until the film's release, allowing for full co-branded product development.\nD6 - Franchise activation precedent: 9 \u2014 Clean franchise-specific comp data is available, with prior Disney animated franchise CPG partnerships well-documented for Frozen 1 and Frozen 2.\n\nPARTIAL_SCORE: 18\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks, providing a clean assessment for the human reviewer.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T13",
+      "title": "Superman: Man of Tomorrow",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: Superman: Man of Tomorrow\nTOTAL SCORE: 72/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 8/10 \u2014 Superman is a globally recognized IP with strong appeal across families and adults 18-49, aligning well with the brand's broad target demographic, and the DCU's push for broader appeal should capture some Gen Z interest.\n2. Brand alignment and safety: 7/10 \u2014 Superman as an iconic, aspirational hero aligns well with a legacy CPG brand's broad family appeal and positive equity.\n3. Cultural moment and earned media potential: 7/10 \u2014 As a key sequel in the new DCU launch, this film is expected to generate significant press and social conversation among a large superhero fandom.\n4. Activation runway and timing: 7/10 \u2014 This release date is 13 months from today, allowing for limited-edition packaging and co-branded content development.\n5. Integration potential: 7/10 \u2014 Integration is possible within the modern DCU's live-action setting, though specific opportunities will depend on the film's narrative focus and require careful alignment to maintain authenticity.\n6. Franchise activation precedent: 5/10 \u2014 Prior Superman partnership comps exist, but the DCU franchise reset introduces uncertainty about their applicability for this new iteration.\n7. Talent alignment and promotional commitment: 7/10 \u2014 While the lead cast for this new DCU iteration may not yet be widely established, the iconic nature of Superman and the established brand of DC Studios generally ensures strong promotional commitment and potential for talent engagement.\n8. Relationship fostering opportunity: 9/10 \u2014 Partnering with a major DCU launch sequel provides access to a significant franchise pipeline and a studio known for collaborative ATL stakeholders who are likely to become long-term advocates.\n9. Key market activation fit: 8/10 \u2014 As a major DC Studios tentpole, the film is expected to have significant global marketing support with major US and international premiere events, offering strong opportunities for brand activation in key markets.\n10. Quality and creative potential: 7/10 \u2014 The iconic nature of Superman offers a strong narrative bridge for a legacy CPG brand, allowing for authentic co-branded content centered around themes of hope and heroism.\n\nACC IN-FILM ROI PROJECTION:\nIntegration feasible: Live-action, real-world Metropolis setting. DCU precedent for brand integration in civilian and workplace scenes.\nViewership estimate: 80,000,000\nScenarios:\n- 1 hero: Integration fee $300,000, ROI multiplier 8.6507 (excellent)\n- 2 hero: Integration fee $600,000, ROI multiplier 8.6507 (excellent)\n- 3 hero: Integration fee $1,000,000, ROI multiplier 7.6856 (excellent)\n\nSCORING NOTES:\nThis score is clean with no flags present. The overall score exceeds the human gate threshold, warranting human review.",
+      "roi_result": {
+        "title_id": "T13",
+        "title": "Superman: Man of Tomorrow",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action, real-world Metropolis setting. DCU precedent for brand integration in civilian and workplace scenes.",
+        "combined_viewership": 80000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 2895200.0,
+            "roi_multiplier": 8.6507,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 5790400.0,
+            "roi_multiplier": 8.6507,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 8685600.0,
+            "roi_multiplier": 7.6856,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T13\nTITLE: Superman: Man of Tomorrow\n\nD1 - Audience reach and demographic fit: 8/10 \u2014 Superman is a globally recognized IP with strong appeal across families and adults 18-49, aligning well with the brand's broad target demographic, and the DCU's push for broader appeal should capture some Gen Z interest.\nD9 - Key market activation fit: 8/10 \u2014 As a major DC Studios tentpole, the film is expected to have significant global marketing support with major US and international premiere events, offering strong opportunities for brand activation in key markets.\n\nPARTIAL_SCORE: 16\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T13\nTITLE: Superman: Man of Tomorrow\n\nD2 - Brand alignment and safety: 7/10 \u2014 Superman as an iconic, aspirational hero aligns well with a legacy CPG brand's broad family appeal and positive equity.\nD5 - Integration potential: 7/10 \u2014 Integration is possible within the modern DCU's live-action setting, though specific opportunities will depend on the film's narrative focus and require careful alignment to maintain authenticity.\nD8 - Relationship fostering opportunity: 9/10 \u2014 Partnering with a major DCU launch sequel provides access to a significant franchise pipeline and a studio known for collaborative ATL stakeholders who are likely to become long-term advocates.\nD10 - Quality and creative potential: 7/10 \u2014 The iconic nature of Superman offers a strong narrative bridge for a legacy CPG brand, allowing for authentic co-branded content centered around themes of hope and heroism.\n\nPARTIAL_SCORE: 30\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T13\nTITLE: Superman: Man of Tomorrow\n\nD3 - Cultural moment and earned media potential: 7 \u2014 As a key sequel in the new DCU launch, this film is expected to generate significant press and social conversation among a large superhero fandom.\nD7 - Talent alignment and promotional commitment: 7 \u2014 While the lead cast for this new DCU iteration may not yet be widely established, the iconic nature of Superman and the established brand of DC Studios generally ensures strong promotional commitment and potential for talent engagement.\n\nPARTIAL_SCORE: 14\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T13\nTITLE: Superman: Man of Tomorrow\n\nD4 - Activation runway and timing: 7 \u2014 This release date is 13 months from today, allowing for limited-edition packaging and co-branded content development.\nD6 - Franchise activation precedent: 5 \u2014 Prior Superman partnership comps exist, but the DCU franchise reset introduces uncertainty about their applicability for this new iteration.\n\nPARTIAL_SCORE: 12\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: N/A\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T14",
+      "title": "A Minecraft Movie Sequel",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: A Minecraft Movie Sequel\nTOTAL SCORE: 78/100\nROUTE TO HUMAN: YES\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 8/10 \u2014 The film's strong appeal to families, Gen Z, and gamers directly aligns with the brand's target demographics, offering significant crossover potential.\n2. Brand alignment and safety: 7/10 \u2014 The Minecraft IP is widely recognized as family-friendly and creative, aligning well with the brand's approachable positioning and broad demographic targets, though it is not as directly tied to nostalgia as some other IPs.\n3. Cultural moment and earned media potential: 8/10 \u2014 The first film's success and the inherent global popularity of the Minecraft IP indicate significant earned media potential and social conversation volume.\n4. Activation runway and timing: 8/10 \u2014 With 12 months until release (June 2026 to July 2027), limited-edition packaging and co-branded content activations are achievable.\n5. Integration potential: 7/10 \u2014 Integration is possible within the creative and adventurous world of Minecraft, with precedent for product placement in similar genre films, although it is not a live-action, real-world setting that would typically lend itself to extensive brand integration.\n6. Franchise activation precedent: 9/10 \u2014 The first film's success and the availability of specific CPG partnership data for the Minecraft franchise provide a strong foundation for assessing activation ceilings.\n7. Talent alignment and promotional commitment: 5/10 \u2014 As an animated sequel to a property that relies on its IP rather than specific on-screen talent for recognition, there is no dominant lead actor to drive promotional commitment.\n8. Relationship fostering opportunity: 9/10 \u2014 A sequel to a successful franchise from Warner Bros. offers significant opportunity to deepen the relationship with a major studio that has a strong pipeline of family-friendly content and proven collaborative success.\n9. Key market activation fit: 8/10 \u2014 As a major Warner Bros. release with a global franchise, it will likely have significant international marketing support and premiere events in key markets, aligning with the brand's global activation needs.\n10. Quality and creative potential: 9/10 \u2014 The connection between a legacy CPG brand focused on family and creativity and the world of Minecraft offers a strong, authentic narrative hook for co-branded content that both parties would be excited to amplify.\n\nACC IN-FILM ROI PROJECTION:\nViewership Estimate: 90,000,000\nScenarios:\n  - 1 Hero Integration: Integration Fee $300,000, ROI Multiplier 9.857x (Tier: Excellent)\n  - 2 Hero Integration: Integration Fee $600,000, ROI Multiplier 9.857x (Tier: Excellent)\n  - 3 Hero Integration: Integration Fee $1,000,000, ROI Multiplier 8.7713x (Tier: Excellent)\n\nSCORING NOTES:\nThis is a clean score with no flags. The score exceeds the human gate threshold, warranting further review. The ROI projection assumes the sequel maintains a live-action/real-world framing for integration; a shift to a fully in-game setting would require re-evaluation.",
+      "roi_result": {
+        "title_id": "T14",
+        "title": "A Minecraft Movie Sequel",
+        "integration_feasible": true,
+        "feasibility_note": "Sequel maintains live-action / real-world framing from first film (characters enter game world from real-world setting). Integration feasible in real-world scenes. Flag for review if sequel shifts to fully in-game setting.",
+        "combined_viewership": 90000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 3257100.0,
+            "roi_multiplier": 9.857,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 6514200.0,
+            "roi_multiplier": 9.857,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 9771300.0,
+            "roi_multiplier": 8.7713,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T14\nTITLE: A Minecraft Movie Sequel\n\nD1 - Audience reach and demographic fit: 8 \u2014 The film's strong appeal to families, Gen Z, and gamers directly aligns with the brand's target demographics, offering significant crossover potential.\nD9 - Key market activation fit: 8 \u2014 As a major Warner Bros. release with a global franchise, it will likely have significant international marketing support and premiere events in key markets, aligning with the brand's global activation needs.\n\nPARTIAL_SCORE: 16\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T14\nTITLE: A Minecraft Movie Sequel\n\nD2 - Brand alignment and safety: 7/10 \u2014 The Minecraft IP is widely recognized as family-friendly and creative, aligning well with the brand's approachable positioning and broad demographic targets, though it is not as directly tied to nostalgia as some other IPs.\nD5 - Integration potential: 7/10 \u2014 Integration is possible within the creative and adventurous world of Minecraft, with precedent for product placement in similar genre films, although it is not a live-action, real-world setting that would typically lend itself to extensive brand integration.\nD8 - Relationship fostering opportunity: 9/10 \u2014 A sequel to a successful franchise from Warner Bros. offers significant opportunity to deepen the relationship with a major studio that has a strong pipeline of family-friendly content and proven collaborative success.\nD10 - Quality and creative potential: 9/10 \u2014 The connection between a legacy CPG brand focused on family and creativity and the world of Minecraft offers a strong, authentic narrative hook for co-branded content that both parties would be excited to amplify.\n\nPARTIAL_SCORE: 32\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T14\nTITLE: A Minecraft Movie Sequel\n\nD3 - Cultural moment and earned media potential: 8 \u2014 The first film's success and the inherent global popularity of the Minecraft IP indicate significant earned media potential and social conversation volume.\nD7 - Talent alignment and promotional commitment: 5 \u2014 As an animated sequel to a property that relies on its IP rather than specific on-screen talent for recognition, there is no dominant lead actor to drive promotional commitment.\n\nPARTIAL_SCORE: 13\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi\nTITLE_ID: T14\nTITLE: A Minecraft Movie Sequel\n\nD4 - Activation runway and timing: 8 \u2014 With 12 months until release (June 2026 to July 2027), limited-edition packaging and co-branded content activations are achievable.\nD6 - Franchise activation precedent: 9 \u2014 The first film's success and the availability of specific CPG partnership data for the Minecraft franchise provide a strong foundation for assessing activation ceilings.\n\nPARTIAL_SCORE: 17\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: FLAG\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: FLAG -- Dimension 5 (Integration potential) scores 7/10 with a note highlighting that the film \"is not a live-action, real-world setting that would typically lend itself to extensive brand integration,\" yet the ROI projection notes explicitly state an assumption of \"live-action/real-world framing for integration\" to derive its figures. This creates a contradiction between the basis of the dimension score and the assumptions for ROI.\nLOW-CONFIDENCE CONSISTENCY: N/A\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe human reviewer should verify if the ROI projections' underlying assumption of a live-action/real-world setting aligns with the integration potential described in Dimension 5.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    }
+  ],
+  "archived": [
+    {
+      "title_id": "T01",
+      "title": "Spider-Man: Brand New Day",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: Spider-Man: Brand New Day\nTOTAL SCORE: 64/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 7/10 \u2014 This film will draw a strong primary audience of 18-49 adults and families, with significant crossover appeal to Gen Z, aligning well with the brand's core targets.\n2. Brand alignment and safety: 7/10 \u2014 The film's heroic and aspirational themes align well with a mass-market CPG brand, though the superhero genre requires careful tone consideration.\n3. Cultural moment and earned media potential: 8/10 \u2014 As a major installment in the highly popular Spider-Man franchise, this film is poised to generate significant social conversation and press coverage, tapping into a well-established global fandom.\n4. Activation runway and timing: 2/10 \u2014 The release date of July 31, 2026, provides less than 2 months from today (June 24, 2026), limiting activation to amplification only.\n5. Integration potential: 5/10 \u2014 While integration is possible in live-action films with established precedent, the specific opportunities within \"Spider-Man: Brand New Day\" would require deep storyline alignment rather than incidental placement.\n6. Franchise activation precedent: 7/10 \u2014 Prior Spider-Man films provide strong CPG partnership comp data, but the specific integration of \"Brand New Day\" within the broader multiverse or its exact connection to the MCU slate introduces some uncertainty.\n7. Talent alignment and promotional commitment: 7/10 \u2014 While specific lead talent for \"Brand New Day\" is not detailed, past Spider-Man films feature culturally prominent figures with substantial social reach and a history of engaging in promotional activities.\n8. Relationship fostering opportunity: 7/10 \u2014 This partnership deepens an existing studio relationship with Sony/Marvel, known for its strong near-term slate and a creative team experienced in authentic brand collaborations.\n9. Key market activation fit: 7/10 \u2014 A major Marvel release like this will secure strong US premiere events and likely significant international marketing presence, providing multiple activation opportunities.\n10. Quality and creative potential: 7/10 \u2014 A strong narrative connection can be built between a family-friendly CPG brand and the themes of responsibility and everyday heroism present in Spider-Man.\n\nACC IN-FILM ROI PROJECTION:\nIntegration Feasible: Yes. Live-action, real-world New York setting. Hero product placement achievable in practical scenes.\nViewership Estimate: 150,000,000\nTop Scenarios by ROI Multiplier:\n- 1 hero: Integration fee $300,000, ROI multiplier 17.095 (excellent)\n- 2 hero: Integration fee $600,000, ROI multiplier 17.095 (excellent)\n- 3 hero: Integration fee $1,000,000, ROI multiplier 15.2855 (excellent)\n\nSCORING NOTES:\nThis is a clean score with no low confidence or consistency flags. The only notable point is the very low D4 score, indicating a severely limited activation runway due to the proximity of the release date. This largely restricts potential activation to amplification efforts.",
+      "roi_result": {
+        "title_id": "T01",
+        "title": "Spider-Man: Brand New Day",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action, real-world New York setting. Hero product placement achievable in practical scenes.",
+        "combined_viewership": 150000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 5428500.0,
+            "roi_multiplier": 17.095,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 10857000.0,
+            "roi_multiplier": 17.095,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 16285500.0,
+            "roi_multiplier": 15.2855,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T01\nTITLE: Spider-Man: Brand New Day\n\nD1 - Audience reach and demographic fit: 7/10 \u2014 This film will draw a strong primary audience of 18-49 adults and families, with significant crossover appeal to Gen Z, aligning well with the brand's core targets.\nD9 - Key market activation fit: 7/10 \u2014 A major Marvel release like this will secure strong US premiere events and likely significant international marketing presence, providing multiple activation opportunities.\n\nPARTIAL_SCORE: 14\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T01\nTITLE: Spider-Man: Brand New Day\n\nD2 - Brand alignment and safety: 7 \u2014 The film's heroic and aspirational themes align well with a mass-market CPG brand, though the superhero genre requires careful tone consideration.\nD5 - Integration potential: 5 \u2014 While integration is possible in live-action films with established precedent, the specific opportunities within \"Spider-Man: Brand New Day\" would require deep storyline alignment rather than incidental placement.\nD8 - Relationship fostering opportunity: 7 \u2014 This partnership deepens an existing studio relationship with Sony/Marvel, known for its strong near-term slate and a creative team experienced in authentic brand collaborations.\nD10 - Quality and creative potential: 7 \u2014 A strong narrative connection can be built between a family-friendly CPG brand and the themes of responsibility and everyday heroism present in Spider-Man.\n\nPARTIAL_SCORE: 26\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent_agent\nTITLE_ID: T01\nTITLE: Spider-Man: Brand New Day\n\nD3 - Cultural moment and earned media potential: 8/10 \u2014 As a major installment in the highly popular Spider-Man franchise, this film is poised to generate significant social conversation and press coverage, tapping into a well-established global fandom.\nD7 - Talent alignment and promotional commitment: 7/10 \u2014 While specific lead talent for \"Brand New Day\" is not detailed, past Spider-Man films feature culturally prominent figures with substantial social reach and a history of engaging in promotional activities.\n\nPARTIAL_SCORE: 15\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T01\nTITLE: Spider-Man: Brand New Day\n\nD4 - Activation runway and timing: 2 \u2014 The release date of July 31, 2026, provides less than 2 months from today (June 24, 2026), limiting activation to amplification only.\nD6 - Franchise activation precedent: 7 \u2014 Prior Spider-Man films provide strong CPG partnership comp data, but the specific integration of \"Brand New Day\" within the broader multiverse or its exact connection to the MCU slate introduces some uncertainty.\n\nPARTIAL_SCORE: 9\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: N/A if flag not set\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks.",
+      "consistency_check": {
+        "title": "Spider-Man: Brand New Day",
+        "has_inconsistency": true,
+        "flagged_dimensions": [
+          "D5: run1=5, run2=7, variance=2"
+        ],
+        "run1_scores": {
+          "D1": 7,
+          "D9": 7,
+          "D2": 7,
+          "D5": 5,
+          "D8": 7,
+          "D10": 7,
+          "D3": 8,
+          "D7": 7,
+          "D4": 2,
+          "D6": 7
+        },
+        "run2_scores": {
+          "D1": 7,
+          "D9": 7,
+          "D2": 7,
+          "D5": 7,
+          "D8": 8,
+          "D10": 8,
+          "D3": 8,
+          "D7": 7,
+          "D4": 2,
+          "D6": 7
+        }
+      },
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T03",
+      "title": "Cat in the Hat",
+      "scoring_role": "high_scorer",
+      "final_scorecard": "TITLE: Cat in the Hat\nTOTAL SCORE: 60/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 3 dimensions scored at or below 4: D4, D5, D6; D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 7/10 \u2014 The film's focus on a beloved children's book character directly targets families and broad household reach, aligning well with the brand's core demographic and the goal of Gen Z extension.\n2. Brand alignment and safety: 9/10 \u2014 The whimsical, family-friendly, and nostalgic nature of \"Cat in the Hat\" directly aligns with the brand's warm, approachable, and cross-generational positioning, posing no safety risks.\n3. Cultural moment and earned media potential: 7/10 \u2014 The film leverages a widely recognized children's book IP with nostalgic appeal, promising moderate social conversation and earned media, though likely not a major cultural event on its own.\n4. Activation runway and timing: 3/10 \u2014 The release date of November 6, 2026, provides 4 months from today (June 24, 2026), which only allows for amplification and in-market social activations.\n5. Integration potential: 1/10 \u2014 As an animated feature, \"Cat in the Hat\" structurally prevents any integration of real-world brands within its fictional world.\n6. Franchise activation precedent: 3/10 \u2014 There is no specific franchise precedent for \"Cat in the Hat\" CPG partnerships readily available, requiring reliance on genre-level comparables.\n7. Talent alignment and promotional commitment: 7/10 \u2014 While specific talent isn't listed, the iconic nature of the character suggests potential for high-profile voice talent who can bring significant promotional commitment and owned social reach.\n8. Relationship fostering opportunity: 7/10 \u2014 Partnering with Warner Bros. on a beloved Dr. Seuss property offers a good opportunity to deepen the studio relationship and leverage a familiar creative team known for family content, fostering positive future interactions.\n9. Key market activation fit: 7/10 \u2014 A major November release from Warner Bros. for a family film like Cat in the Hat will likely include a significant US premiere and a global marketing push, allowing for activation in key domestic and international markets.\n10. Quality and creative potential: 9/10 \u2014 The inherent charm and broad appeal of \"Cat in the Hat\" provide an immediate and authentic narrative hook for a legacy CPG brand, allowing for creative content that naturally bridges the film's themes of fun and imagination with the brand's identity.\n\nACC IN-FILM ROI PROJECTION:\nLOW CONFIDENCE: ROI projection is not applicable due to the film's fully animated nature. In-film hero integration is not possible, regardless of fee.\n\nSCORING NOTES:\nThis title is flagged for low confidence due to low scores in Activation Runway, Integration Potential, and Franchise Activation Precedent. The film's animated nature means in-film integration is not feasible, impacting ROI projections. A human reviewer should weigh whether the strong scores in Brand Alignment and Quality are sufficient to offset the lack of in-film integration and limited activation runway.",
+      "roi_result": {
+        "title_id": "T03",
+        "title": "Cat in the Hat",
+        "integration_feasible": false,
+        "feasibility_note": "Fully animated. No real-world setting. In-film hero integration not possible regardless of fee.",
+        "combined_viewership": 0.0,
+        "scenarios": [],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T03\nTITLE: Cat in the Hat\n\nD1 - Audience reach and demographic fit: 7 \u2014 The film's focus on a beloved children's book character directly targets families and broad household reach, aligning well with the brand's core demographic and the goal of Gen Z extension.\nD9 - Key market activation fit: 7 \u2014 A major November release from Warner Bros. for a family film like Cat in the Hat will likely include a significant US premiere and a global marketing push, allowing for activation in key domestic and international markets.\n\nPARTIAL_SCORE: 14\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T03\nTITLE: Cat in the Hat\n\nD2 - Brand alignment and safety: 9 \u2014 The whimsical, family-friendly, and nostalgic nature of \"Cat in the Hat\" directly aligns with the brand's warm, approachable, and cross-generational positioning, posing no safety risks.\nD5 - Integration potential: 1 \u2014 As an animated feature, \"Cat in the Hat\" structurally prevents any integration of real-world brands within its fictional world.\nD8 - Relationship fostering opportunity: 7 \u2014 Partnering with Warner Bros. on a beloved Dr. Seuss property offers a good opportunity to deepen the studio relationship and leverage a familiar creative team known for family content, fostering positive future interactions.\nD10 - Quality and creative potential: 9 \u2014 The inherent charm and broad appeal of \"Cat in the Hat\" provide an immediate and authentic narrative hook for a legacy CPG brand, allowing for creative content that naturally bridges the film's themes of fun and imagination with the brand's identity.\n\nPARTIAL_SCORE: 26\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T03\nTITLE: Cat in the Hat\n\nD3 - Cultural moment and earned media potential: 7/10 \u2014 The film leverages a widely recognized children's book IP with nostalgic appeal, promising moderate social conversation and earned media, though likely not a major cultural event on its own.\nD7 - Talent alignment and promotional commitment: 7/10 \u2014 While specific talent isn't listed, the iconic nature of the character suggests potential for high-profile voice talent who can bring significant promotional commitment and owned social reach.\n\nPARTIAL_SCORE: 14\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T03\nTITLE: Cat in the Hat\n\nD4 - Activation runway and timing: 3 \u2014 The release date of November 6, 2026, provides 4 months from today (June 24, 2026), which only allows for amplification and in-market social activations.\nD6 - Franchise activation precedent: 3 \u2014 There is no specific franchise precedent for \"Cat in the Hat\" CPG partnerships readily available, requiring reliance on genre-level comparables.\n\nPARTIAL_SCORE: 6\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checked criteria.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T04",
+      "title": "Focker In-Law",
+      "scoring_role": "mid_scorer",
+      "final_scorecard": "TITLE: Focker In-Law\nTOTAL SCORE: 57/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: NO\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 6/10 \u2014 This film targets a strong adult audience which aligns with the brand's core 18-49 demographic, but its older skew and limited family appeal reduce its reach for the brand's broader family and Gen Z extension goals.\n2. Brand alignment and safety: 7/10 \u2014 The film's adult comedy genre aligns with a broad adult audience, but its humor requires careful consideration to ensure it doesn't conflict with the brand's warm, family-friendly positioning.\n3. Cultural moment and earned media potential: 5/10 \u2014 While a legacy franchise, the film is unlikely to generate significant organic social conversation or broad cultural buzz beyond its existing fanbase.\n4. Activation runway and timing: 3/10 \u2014 There are 5 months until release, allowing only for amplification and in-market social activations.\n5. Integration potential: 7/10 \u2014 As a live-action theatrical release set in a contemporary, real-world context, product integration is feasible and precedented in the genre, though not yet confirmed for this specific installment.\n6. Franchise activation precedent: 5/10 \u2014 Comp data for this specific franchise is limited, requiring assumptions to bridge gaps and impacting confidence.\n7. Talent alignment and promotional commitment: 7/10 \u2014 The film likely features recognizable comedic actors with established fanbases and a history of promoting their projects, though their promotional commitment specifically to brand partnerships is unconfirmed.\n8. Relationship fostering opportunity: 5/10 \u2014 This standalone title offers moderate relationship value with the studio and potentially the filmmakers, but lacks the franchise extension opportunities that foster deeper, long-term studio partnerships.\n9. Key market activation fit: 6/10 \u2014 A Thanksgiving release in late November implies a strong domestic premiere in a key retail period, but the film's notes suggest a more adult-focused release with less emphasis on global markets or major international premieres that would maximize multi-market activation.\n10. Quality and creative potential: 6/10 \u2014 The connection between a legacy CPG brand and an adult comedy franchise is workable but requires creative effort to establish an authentic narrative bridge that resonates with both a family audience and the film's more mature humor.\n\nACC IN-FILM ROI PROJECTION:\nIntegration feasible: Live-action domestic comedy. Real-world kitchen and home settings support CPG hero placement.\nEstimated combined viewership: 40,000,000\nScenarios:\n- 1 hero: Integration Fee $300,000, ROI Multiplier 3.8253 (Excellent)\n- 2 hero: Integration Fee $600,000, ROI Multiplier 3.8253 (Excellent)\n- 3 hero: Integration Fee $1,000,000, ROI Multiplier 3.3428 (Excellent)\n\nSCORING NOTES:\nThis score is clean with no system-wide flags. However, potential partners should note the limited activation runway (D4) and the need for assumptions due to limited historical comparison data for this franchise (D6).",
+      "roi_result": {
+        "title_id": "T04",
+        "title": "Focker In-Law",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action domestic comedy. Real-world kitchen and home settings support CPG hero placement.",
+        "combined_viewership": 40000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 1447600.0,
+            "roi_multiplier": 3.8253,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 2895200.0,
+            "roi_multiplier": 3.8253,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 4342800.0,
+            "roi_multiplier": 3.3428,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T04\nTITLE: Focker In-Law\n\nD1 - Audience reach and demographic fit: 6/10 \u2014 This film targets a strong adult audience which aligns with the brand's core 18-49 demographic, but its older skew and limited family appeal reduce its reach for the brand's broader family and Gen Z extension goals.\nD9 - Key market activation fit: 6/10 \u2014 A Thanksgiving release in late November implies a strong domestic premiere in a key retail period, but the film's notes suggest a more adult-focused release with less emphasis on global markets or major international premieres that would maximize multi-market activation.\n\nPARTIAL_SCORE: 12\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T04\nTITLE: Focker In-Law\n\nD2 - Brand alignment and safety: 7/10 \u2014 The film's adult comedy genre aligns with a broad adult audience, but its humor requires careful consideration to ensure it doesn't conflict with the brand's warm, family-friendly positioning.\nD5 - Integration potential: 7/10 \u2014 As a live-action theatrical release set in a contemporary, real-world context, product integration is feasible and precedented in the genre, though not yet confirmed for this specific installment.\nD8 - Relationship fostering opportunity: 5/10 \u2014 This standalone title offers moderate relationship value with the studio and potentially the filmmakers, but lacks the franchise extension opportunities that foster deeper, long-term studio partnerships.\nD10 - Quality and creative potential: 6/10 \u2014 The connection between a legacy CPG brand and an adult comedy franchise is workable but requires creative effort to establish an authentic narrative bridge that resonates with both a family audience and the film's more mature humor.\n\nPARTIAL_SCORE: 25\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T04\nTITLE: Focker In-Law\n\nD3 - Cultural moment and earned media potential: 5/10 \u2014 While a legacy franchise, the film is unlikely to generate significant organic social conversation or broad cultural buzz beyond its existing fanbase.\nD7 - Talent alignment and promotional commitment: 7/10 \u2014 The film likely features recognizable comedic actors with established fanbases and a history of promoting their projects, though their promotional commitment specifically to brand partnerships is unconfirmed.\n\nPARTIAL_SCORE: 12\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T04\nTITLE: Focker In-Law\n\nD4 - Activation runway and timing: 3 \u2014 There are 5 months until release, allowing only for amplification and in-market social activations.\nD6 - Franchise activation precedent: 5 \u2014 Comp data for this specific franchise is limited, requiring assumptions to bridge gaps and impacting confidence.\n\nPARTIAL_SCORE: 8\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: N/A if flag not set\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis scorecard is clean and internally consistent across all checks.",
+      "consistency_check": {
+        "title": "Focker In-Law",
+        "has_inconsistency": false,
+        "flagged_dimensions": [],
+        "run1_scores": {
+          "D1": 6,
+          "D9": 6,
+          "D2": 7,
+          "D5": 7,
+          "D8": 5,
+          "D10": 6,
+          "D3": 5,
+          "D7": 7,
+          "D4": 3,
+          "D6": 5
+        },
+        "run2_scores": {
+          "D1": 5,
+          "D9": 5,
+          "D2": 7,
+          "D5": 7,
+          "D8": 5,
+          "D10": 6,
+          "D3": 5,
+          "D7": 7,
+          "D4": 3,
+          "D6": 5
+        }
+      },
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T05",
+      "title": "Cocomelon the Movie",
+      "scoring_role": "obvious_low_scorer",
+      "final_scorecard": "TITLE: Cocomelon the Movie\nTOTAL SCORE: 13/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 10 dimensions scored at or below 4: D1, D10, D2, D3, D4, D5, D6, D7, D8, D9; D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 1/10 \u2014 The film's audience is exclusively toddlers and preschoolers, which is far too young and narrow for the brand's target of families and adults aged 18-49 with a Gen Z extension goal.\n2. Brand alignment and safety: 1/10 \u2014 The extremely young, preschool-only audience and content of Cocomelon fundamentally conflicts with the brand's target of 18-49 adults and families, creating significant brand dissonance.\n3. Cultural moment and earned media potential: 1/10 \u2014 This is a preschool property with minimal organic social conversation or press momentum outside of its core very young demographic, lacking any meaningful earned media potential for a broad CPG brand.\n4. Activation runway and timing: 2/10 \u2014 The release date is 20 months from today (June 2026), enabling long-term planning for product development, but the target audience's limited purchasing power suggests low ROI potential for such activations.\n5. Integration potential: 1/10 \u2014 As an animated property with a world devoid of real-world products, in-film integration of a CPG brand is structurally impossible.\n6. Franchise activation precedent: 1/10 \u2014 There is no precedent for CPG partnerships with Cocomelon in a theatrical film context, making it impossible to establish reliable comp data for activation potential.\n7. Talent alignment and promotional commitment: 1/10 \u2014 As a fully animated property with no prominent lead voice talent typically engaging in co-promotional activities, there is no identifiable face for brand partnerships.\n8. Relationship fostering opportunity: 2/10 \u2014 This partnership offers no opportunity to build relationships with the studio, director, producers, or talent as the target audience and creative scope are misaligned with typical adult/family entertainment stakeholders.\n9. Key market activation fit: 1/10 \u2014 As a direct-to-streaming release without a theatrical premiere, the film offers no physical activation opportunities in key markets or retail environments.\n10. Quality and creative potential: 2/10 \u2014 There is no coherent or authentic narrative connection between a legacy CPG brand and Cocomelon, making any co-branded content feel forced and unamplifiable by either party.\n\nACC IN-FILM ROI PROJECTION:\nLOW CONFIDENCE\nIntegration feasible: No\nFeasibility note: Fully animated toddler IP. No real-world setting. In-film hero integration not possible.\nViewership estimate: 0.0\nScenarios: Not applicable as integration is not feasible.\n\nSCORING NOTES:\nThis score is flagged as low confidence because all ten dimensions scored 4 or below, and Dimension 6 (Franchise activation precedent) has no comparable data. The extremely low scores across the board, coupled with the noted infeasibility of in-film integration, strongly indicate this title is not suitable for partnership. A human review would primarily confirm these fundamental disqualifiers.",
+      "roi_result": {
+        "title_id": "T05",
+        "title": "Cocomelon the Movie",
+        "integration_feasible": false,
+        "feasibility_note": "Fully animated toddler IP. No real-world setting. In-film hero integration not possible.",
+        "combined_viewership": 0.0,
+        "scenarios": [],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T05\nTITLE: Cocomelon the Movie\n\nD1 - Audience reach and demographic fit: 1 \u2014 The film's audience is exclusively toddlers and preschoolers, which is far too young and narrow for the brand's target of families and adults aged 18-49 with a Gen Z extension goal.\nD9 - Key market activation fit: 1 \u2014 As a direct-to-streaming release without a theatrical premiere, the film offers no physical activation opportunities in key markets or retail environments.\n\nPARTIAL_SCORE: 2\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T05\nTITLE: Cocomelon the Movie\n\nD2 - Brand alignment and safety: 1 \u2014 The extremely young, preschool-only audience and content of Cocomelon fundamentally conflicts with the brand's target of 18-49 adults and families, creating significant brand dissonance.\nD5 - Integration potential: 1 \u2014 As an animated property with a world devoid of real-world products, in-film integration of a CPG brand is structurally impossible.\nD8 - Relationship fostering opportunity: 2 \u2014 This partnership offers no opportunity to build relationships with the studio, director, producers, or talent as the target audience and creative scope are misaligned with typical adult/family entertainment stakeholders.\nD10 - Quality and creative potential: 2 \u2014 There is no coherent or authentic narrative connection between a legacy CPG brand and Cocomelon, making any co-branded content feel forced and unamplifiable by either party.\n\nPARTIAL_SCORE: 6\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T05\nTITLE: Cocomelon the Movie\n\nD3 - Cultural moment and earned media potential: 1 \u2014 This is a preschool property with minimal organic social conversation or press momentum outside of its core very young demographic, lacking any meaningful earned media potential for a broad CPG brand.\nD7 - Talent alignment and promotional commitment: 1 \u2014 As a fully animated property with no prominent lead voice talent typically engaging in co-promotional activities, there is no identifiable face for brand partnerships.\n\nPARTIAL_SCORE: 2\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T05\nTITLE: Cocomelon the Movie\n\nD4 - Activation runway and timing: 2 - The release date is 20 months from today (June 2026), enabling long-term planning for product development, but the target audience's limited purchasing power suggests low ROI potential for such activations.\nD6 - Franchise activation precedent: 1 - There is no precedent for CPG partnerships with Cocomelon in a theatrical film context, making it impossible to establish reliable comp data for activation potential.\n\nPARTIAL_SCORE: 3\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis scorecard is internally consistent across all checks, providing a clean assessment.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T06",
+      "title": "The Thomas Crown Affair",
+      "scoring_role": "low_scorer",
+      "final_scorecard": "TITLE: The Thomas Crown Affair\nTOTAL SCORE: 42/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 7 dimensions scored at or below 4: D1, D10, D2, D3, D4, D6, D8\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 4/10 \u2014 The film's target audience of prestige adults skews too narrow and misses the brand's core demographic of families and a broad 18-49 base, with limited Gen Z appeal.\n2. Brand alignment and safety: 3/10 \u2014 The prestige adult thriller tone and upscale demo create a significant tonal mismatch with the brand's warm, family-friendly, and mass-market positioning.\n3. Cultural moment and earned media potential: 4/10 \u2014 This prestige adult thriller is unlikely to generate significant cultural conversation or broad earned media beyond its niche audience.\n4. Activation runway and timing: 4/10 \u2014 There are 9 months from today (June 2026) to the release date (March 2027), which only allows for amplification and in-market social activations.\n5. Integration potential: 5/10 \u2014 Integration is possible in a heist/thriller context, but the film's focus on adult sophistication and wealth may limit natural placement opportunities for a mass-market CPG.\n6. Franchise activation precedent: 3/10 \u2014 Comp data relies on genre-level comparables as the original films are dated and the new film's specific franchise CPG partnership history is thin.\n7. Talent alignment and promotional commitment: 7/10 \u2014 While lead Michael B. Jordan has strong cultural prominence and social reach, his engagement history with brand partnerships beyond his own ventures is limited, and the film's tone may not align with typical promotional activations.\n8. Relationship fostering opportunity: 3/10 \u2014 MGM is not a primary studio partner for this brand, and a standalone prestige adult thriller offers limited franchise extension or opportunity to deepen relationships with key creative stakeholders for future collaborations.\n9. Key market activation fit: 5/10 \u2014 While a theatrical release in March 2027 provides a runway, the \"prestige adult thriller\" genre suggests a more limited international footprint and fewer key market premiere events compared to a broad tentpole.\n10. Quality and creative potential: 4/10 \u2014 The brand-film narrative connection is weak, as a mass-market CPG brand would struggle to find an authentic story within a sophisticated adult thriller that would resonate with both parties for amplification.\n\nACC IN-FILM ROI PROJECTION:\nIntegration is feasible for this live-action prestige thriller, with real-world luxury settings supporting placement, though brand tone fit is a limiting factor.\nViewership estimate: 25,000,000\n1 hero scenario: Integration Fee $300,000 | ROI Multiplier 2.0158\n2 hero scenario: Integration Fee $600,000 | ROI Multiplier 2.0158\n3 hero scenario: Integration Fee $1,000,000 | ROI Multiplier 1.7143\n\nSCORING NOTES:\nA low-confidence flag is present because seven dimensions scored at or below 4, indicating significant concerns across multiple evaluation areas. Key issues include audience mismatch, weak brand alignment, and limited cultural impact. To potentially resolve the low confidence, a deeper dive into alternative integration angles or a re-evaluation of the brand's desired reach for this specific partnership might be beneficial.",
+      "roi_result": {
+        "title_id": "T06",
+        "title": "The Thomas Crown Affair",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action prestige thriller. Real-world luxury settings technically support integration; brand tone fit is the limiting factor.",
+        "combined_viewership": 25000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 904750.0,
+            "roi_multiplier": 2.0158,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 1809500.0,
+            "roi_multiplier": 2.0158,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 2714250.0,
+            "roi_multiplier": 1.7143,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market\nTITLE_ID: T06\nTITLE: The Thomas Crown Affair\n\nD1 - Audience reach and demographic fit: 4 \u2014 The film's target audience of prestige adults skews too narrow and misses the brand's core demographic of families and a broad 18-49 base, with limited Gen Z appeal.\nD9 - Key market activation fit: 5 \u2014 While a theatrical release in March 2027 provides a runway, the \"prestige adult thriller\" genre suggests a more limited international footprint and fewer key market premiere events compared to a broad tentpole.\n\nPARTIAL_SCORE: 9\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T06\nTITLE: The Thomas Crown Affair\n\nD2 - Brand alignment and safety: 3/10 \u2014 The prestige adult thriller tone and upscale demo create a significant tonal mismatch with the brand's warm, family-friendly, and mass-market positioning.\nD5 - Integration potential: 5/10 \u2014 Integration is possible in a heist/thriller context, but the film's focus on adult sophistication and wealth may limit natural placement opportunities for a mass-market CPG.\nD8 - Relationship fostering opportunity: 3/10 \u2014 MGM is not a primary studio partner for this brand, and a standalone prestige adult thriller offers limited franchise extension or opportunity to deepen relationships with key creative stakeholders for future collaborations.\nD10 - Quality and creative potential: 4/10 \u2014 The brand-film narrative connection is weak, as a mass-market CPG brand would struggle to find an authentic story within a sophisticated adult thriller that would resonate with both parties for amplification.\n\nPARTIAL_SCORE: 15\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T06\nTITLE: The Thomas Crown Affair\n\nD3 - Cultural moment and earned media potential: 4 \u2014 This prestige adult thriller is unlikely to generate significant cultural conversation or broad earned media beyond its niche audience.\nD7 - Talent alignment and promotional commitment: 7 \u2014 While lead Michael B. Jordan has strong cultural prominence and social reach, his engagement history with brand partnerships beyond his own ventures is limited, and the film's tone may not align with typical promotional activations.\n\nPARTIAL_SCORE: 11\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T06\nTITLE: The Thomas Crown Affair\n\nD4 - Activation runway and timing: 4 \u2014 There are 9 months from today (June 2026) to the release date (March 2027), which only allows for amplification and in-market social activations.\nD6 - Franchise activation precedent: 3 \u2014 Comp data relies on genre-level comparables as the original films are dated and the new film's specific franchise CPG partnership history is thin.\n\nPARTIAL_SCORE: 7\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks, providing a clean assessment for the human reviewer.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T07",
+      "title": "K-Pop Superstar",
+      "scoring_role": "edge_case",
+      "final_scorecard": "TITLE: K-Pop Superstar\nTOTAL SCORE: 53/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 6/10 \u2014 The film strongly targets Gen Z, aligning with the brand's extension goal, but its primary appeal may miss the broader 18-49 and family demographics that form the brand's core base.\n2. Brand alignment and safety: 5/10 \u2014 While it offers a potential Gen Z cultural signal, the K-Pop genre may represent unfamiliar territory for a legacy CPG brand, creating a moderate tension in brand alignment.\n3. Cultural moment and earned media potential: 5/10 \u2014 While the film has a strong Gen Z cultural signal within its niche, it is unlikely to generate broad, sustained earned media or widespread social conversation beyond its specific fandom, making it a moderate cultural moment.\n4. Activation runway and timing: 7/10 \u2014 20 months from today to release enables limited-edition packaging and co-branded content.\n5. Integration potential: 7/10 \u2014 Integration is plausible within the film's real-world music and performance setting, offering opportunities for natural product placement if handled creatively.\n6. Franchise activation precedent: 3/10 \u2014 Comp data is thin as it relies on genre-level comparables rather than franchise-specific data for this unique film type.\n7. Talent alignment and promotional commitment: 5/10 \u2014 The film's primary talent is likely a K-Pop group with significant fan engagement, but their promotional commitment may be limited to the film's core marketing or contractual restrictions with their music label, making it uncertain if they will actively engage with a CPG brand partner.\n8. Relationship fostering opportunity: 5/10 \u2014 The film might foster some relationship value with the studio if it's a key release, but there's no strong signal yet that the ATL creative stakeholders (director/talent) are known for deep brand collaboration.\n9. Key market activation fit: 5/10 \u2014 The film's potential for international premieres offers activation opportunities, but its primary focus on a niche cultural moment may limit broader market resonance beyond key urban centers.\n10. Quality and creative potential: 5/10 \u2014 The narrative connection between a legacy CPG brand and a K-Pop film requires significant creative development to feel authentic and avoid being forced.\n\nACC IN-FILM ROI PROJECTION:\nIntegration is feasible in a live-action music industry setting, with real-world environments supporting hero placement in backstage and performance prep scenes.\nEstimated Viewership: 30,000,000\n***LOW CONFIDENCE ROI PROJECTION DUE TO OVERALL PROJECT UNCERTAINTY***\nTop Scenarios by ROI Multiplier:\n-   **1 hero integration**: Integration Fee: $300,000 | ROI Multiplier: 2.619 (excellent)\n-   **2 hero integration**: Integration Fee: $600,000 | ROI Multiplier: 2.619 (excellent)\n-   **3 hero integration**: Integration Fee: $1,000,000 | ROI Multiplier: 2.2571 (excellent)\n\nSCORING NOTES:\nA low confidence flag is present due to unavailable comparative data for Dimension 6, 'Franchise Activation Precedent'. This specific genre lacks robust historical performance data, making the score for this dimension less certain. If more genre-specific or similar cross-promotional data becomes available, it could help resolve this uncertainty for the human gate reviewer. No consistency issues were detected.",
+      "roi_result": {
+        "title_id": "T07",
+        "title": "K-Pop Superstar",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action music industry setting. Real-world environments support hero placement in backstage and performance prep scenes.",
+        "combined_viewership": 30000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 1085700.0,
+            "roi_multiplier": 2.619,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 2171400.0,
+            "roi_multiplier": 2.619,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 3257100.0,
+            "roi_multiplier": 2.2571,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T07\nTITLE: K-Pop Superstar\n\nD1 - Audience reach and demographic fit: 6/10 \u2014 The film strongly targets Gen Z, aligning with the brand's extension goal, but its primary appeal may miss the broader 18-49 and family demographics that form the brand's core base.\nD9 - Key market activation fit: 5/10 \u2014 The film's potential for international premieres offers activation opportunities, but its primary focus on a niche cultural moment may limit broader market resonance beyond key urban centers.\nPARTIAL_SCORE: 11\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T07\nTITLE: K-Pop Superstar\n\nD2 - Brand alignment and safety: 5 \u2014 While it offers a potential Gen Z cultural signal, the K-Pop genre may represent unfamiliar territory for a legacy CPG brand, creating a moderate tension in brand alignment.\nD5 - Integration potential: 7 \u2014 Integration is plausible within the film's real-world music and performance setting, offering opportunities for natural product placement if handled creatively.\nD8 - Relationship fostering opportunity: 5 \u2014 The film might foster some relationship value with the studio if it's a key release, but there's no strong signal yet that the ATL creative stakeholders (director/talent) are known for deep brand collaboration.\nD10 - Quality and creative potential: 5 \u2014 The narrative connection between a legacy CPG brand and a K-Pop film requires significant creative development to feel authentic and avoid being forced.\n\nPARTIAL_SCORE: 22\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent_agent\nTITLE_ID: T07\nTITLE: K-Pop Superstar\n\nD3 - Cultural moment and earned media potential: 5 \u2014 While the film has a strong Gen Z cultural signal within its niche, it is unlikely to generate broad, sustained earned media or widespread social conversation beyond its specific fandom, making it a moderate cultural moment.\nD7 - Talent alignment and promotional commitment: 5 \u2014 The film's primary talent is likely a K-Pop group with significant fan engagement, but their promotional commitment may be limited to the film's core marketing or contractual restrictions with their music label, making it uncertain if they will actively engage with a CPG brand partner.\n\nPARTIAL_SCORE: 10\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi\nTITLE_ID: T07\nTITLE: K-Pop Superstar\n\nD4 - Activation runway and timing: 7 \u2014 20 months from today to release enables limited-edition packaging and co-branded content.\nD6 - Franchise activation precedent: 3 \u2014 Comp data is thin as it relies on genre-level comparables rather than franchise-specific data for this unique film type.\n\nPARTIAL_SCORE: 10\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T10",
+      "title": "The Batman: Part II",
+      "scoring_role": "edge_case",
+      "final_scorecard": "TITLE: The Batman: Part II\nTOTAL SCORE: 43/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 6 dimensions scored at or below 4: D1, D10, D2, D4, D5, D8; D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 4/10 \u2014 The film's dark, adult-skewing, noir tone and focus on a mature audience segment limits its appeal to the brand's target of families and broad 18-49 demographic with Gen Z crossover.\n2. Brand alignment and safety: 3/10 \u2014 The film's dark, noir tone and adult-skewing crime thriller genre present a significant tonal mismatch with the brand's warm, family-friendly positioning, creating potential brand dissonance.\n3. Cultural moment and earned media potential: 7/10 \u2014 The Batman franchise possesses a significant cultural footprint with a dedicated fandom and substantial press momentum, even with a grounded tone.\n4. Activation runway and timing: 3/10 \u2014 There are 15 months from today (June 24, 2026) to the film's release date (October 1, 2027), which primarily supports amplification-level activations.\n5. Integration potential: 3/10 \u2014 Integration is structurally constrained by the film's grounded and dark tone, where a consumer brand presence would likely break the established world and feel inauthentic.\n6. Franchise activation precedent: 5/10 \u2014 There is franchise-specific precedent for DC films, but the delayed release and uncertain tone for this specific installment make direct CPG partnership comps less reliable and introduce uncertainty.\n7. Talent alignment and promotional commitment: 5/10 \u2014 While Robert Pattinson has a strong cultural profile and owned social reach, his prior engagement with brand partnerships is limited, and his current promotional commitment is uncertain given the film's tone.\n8. Relationship fostering opportunity: 3/10 \u2014 While Warner Bros. has a strong franchise pipeline, The Batman is a standalone, darker property with limited franchise extension potential, and its ATL creative stakeholders are unlikely to carry the relationship forward for this brand.\n9. Key market activation fit: 7/10 \u2014 As a major DC Studios release, The Batman: Part II is expected to have significant global marketing infrastructure and likely premiere events in key US and international markets, offering strong activation opportunities.\n10. Quality and creative potential: 3/10 \u2014 The narrative connection between a mass-market CPG brand and a dark, adult-oriented noir film is weak, making it difficult to craft authentic co-branded content that both parties would be proud to amplify.\n\nACC IN-FILM ROI PROJECTION:\nIntegration Fee: Varies by scenario (e.g., $300,000 for '1 hero', $600,000 for '2 hero', $1,000,000 for '3 hero')\nViewership Estimate: 70,000,000\nTop Scenarios:\n- 1 hero: ROI Multiplier 7.4443 (excellent)\n- 2 hero: ROI Multiplier 7.4443 (excellent)\n- 3 hero: ROI Multiplier 6.5999 (excellent)\n*LOW CONFIDENCE: D5 integration potential scored 3/10 \u2014 rubric flagged limited in-film integration path despite real-world setting. Human reviewer should weigh whether hero placement is realistically achievable.*\n\nSCORING NOTES:\nA low confidence flag is present because six dimensions scored 4 or below (D1, D2, D4, D5, D8, D10) and D6 comp data is unavailable or indicates release risk. The ROI projection also notes low confidence regarding the feasibility of hero placement. A human reviewer should specifically evaluate the integration potential (D5) given the dark tone of the film and consider the realistic achievability of the projected ROI scenarios for this title.",
+      "roi_result": {
+        "title_id": "T10",
+        "title": "The Batman: Part II",
+        "integration_feasible": true,
+        "feasibility_note": "Live-action noir. Real-world Gotham setting. Integration technically feasible; dark tone limits brand fit options. Flag delay risk.",
+        "combined_viewership": 70000000,
+        "scenarios": [
+          {
+            "label": "1 hero",
+            "heroes": 1,
+            "integration_fee": 300000,
+            "media_value": 2533300.0,
+            "roi_multiplier": 7.4443,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "2 hero",
+            "heroes": 2,
+            "integration_fee": 600000,
+            "media_value": 5066600.0,
+            "roi_multiplier": 7.4443,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": false
+          },
+          {
+            "label": "3 hero",
+            "heroes": 3,
+            "integration_fee": 1000000,
+            "media_value": 7599900.0,
+            "roi_multiplier": 6.5999,
+            "tier": "excellent",
+            "spot_seconds": 15,
+            "channel": "streaming",
+            "narrative_integration": true
+          }
+        ],
+        "low_confidence": true,
+        "confidence_note": "D5 integration potential scored 3/10 \u2014 rubric flagged limited in-film integration path despite real-world setting. Human reviewer should weigh whether hero placement is realistically achievable."
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T10\nTITLE: The Batman: Part II\n\nD1 - Audience reach and demographic fit: 4/10 \u2014 The film's dark, adult-skewing, noir tone and focus on a mature audience segment limits its appeal to the brand's target of families and broad 18-49 demographic with Gen Z crossover.\nD9 - Key market activation fit: 7/10 \u2014 As a major DC Studios release, The Batman: Part II is expected to have significant global marketing infrastructure and likely premiere events in key US and international markets, offering strong activation opportunities.\n\nPARTIAL_SCORE: 11\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T10\nTITLE: The Batman: Part II\n\nD2 - Brand alignment and safety: 3/10 \u2014 The film's dark, noir tone and adult-skewing crime thriller genre present a significant tonal mismatch with the brand's warm, family-friendly positioning, creating potential brand dissonance.\nD5 - Integration potential: 3/10 \u2014 Integration is structurally constrained by the film's grounded and dark tone, where a consumer brand presence would likely break the established world and feel inauthentic.\nD8 - Relationship fostering opportunity: 3/10 \u2014 While Warner Bros. has a strong franchise pipeline, The Batman is a standalone, darker property with limited franchise extension potential, and its ATL creative stakeholders are unlikely to carry the relationship forward for this brand.\nD10 - Quality and creative potential: 3/10 \u2014 The narrative connection between a mass-market CPG brand and a dark, adult-oriented noir film is weak, making it difficult to craft authentic co-branded content that both parties would be proud to amplify.\n\nPARTIAL_SCORE: 12\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T10\nTITLE: The Batman: Part II\n\nD3 - Cultural moment and earned media potential: 7/10 \u2014 The Batman franchise possesses a significant cultural footprint with a dedicated fandom and substantial press momentum, even with a grounded tone.\nD7 - Talent alignment and promotional commitment: 5/10 \u2014 While Robert Pattinson has a strong cultural profile and owned social reach, his prior engagement with brand partnerships is limited, and his current promotional commitment is uncertain given the film's tone.",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T10\nTITLE: The Batman: Part II\n\nD4 - Activation runway and timing: 3 \u2014 There are 15 months from today (June 24, 2026) to the film's release date (October 1, 2027), which primarily supports amplification-level activations.\nD6 - Franchise activation precedent: 5 \u2014 There is franchise-specific precedent for DC films, but the delayed release and uncertain tone for this specific installment make direct CPG partnership comps less reliable and introduce uncertainty.\n\nPARTIAL_SCORE: 8\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThe scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T11",
+      "title": "The Lord of the Rings: The Hunt for Gollum",
+      "scoring_role": "edge_case",
+      "final_scorecard": "TITLE: The Lord of the Rings: The Hunt for Gollum\nTOTAL SCORE: 62/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 3 dimensions scored at or below 4: D10, D2, D5\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 5/10 \u2014 While the film has global recognition and nostalgia appeal, its core fantasy demographic skews narrower than the brand's broad family and 18-49 target, with limited guaranteed Gen Z crossover.\n2. Brand alignment and safety: 3/10 \u2014 While a beloved legacy IP, the dark fantasy setting and often grim themes of The Lord of the Rings are not inherently aligned with a warm, approachable CPG brand and could create tonal dissonance.\n3. Cultural moment and earned media potential: 7/10 \u2014 The Lord of the Rings IP has a dedicated global fanbase that will generate significant press and social conversation, particularly given the director Andy Serkis's involvement and the anticipation for new Middle-earth stories.\n4. Activation runway and timing: 9/10 \u2014 There are 18 months from today (June 2026) to the film's December 2027 release, enabling full co-branded product development.\n5. Integration potential: 1/10 \u2014 Integration is structurally impossible as the fantasy world of Middle-earth does not accommodate real-world consumer brands within its narrative.\n6. Franchise activation precedent: 9/10 \u2014 Clean franchise-specific comp data is available for the Lord of the Rings IP, with prior successful CPG partnerships to draw from.\n7. Talent alignment and promotional commitment: 5/10 \u2014 While Andy Serkis is a recognizable figure, the film's lead is Gollum, a character performance capture role with limited direct talent promotional availability outside of the actor himself, and the ensemble cast's promotional commitment to brand partnerships is not yet established for this specific film.\n8. Relationship fostering opportunity: 9/10 \u2014 Partnership opens access to a major studio franchise ecosystem with multiple upcoming relevant titles, and the studio has a history of collaborative relationships with talent known for brand partnerships.\n9. Key market activation fit: 10/10 \u2014 This film promises major global premieres in key markets like London and potentially New Zealand, offering significant activation opportunities across the brand's priority international regions.\n10. Quality and creative potential: 4/10 \u2014 The narrative connection between a mass-market CPG brand and the specific lore of The Hunt for Gollum is weak and would require significant creative effort to make feel authentic.\n\nACC IN-FILM ROI PROJECTION:\nIntegration in the film is not feasible due to the fantasy world setting (Middle-earth), which does not accommodate real-world consumer brands. In-film hero integration is not possible regardless of fee. Viewership estimates and ROI scenarios are therefore not applicable.\n\nSCORING NOTES:\nThe total score for this title is below the human review threshold. A low-confidence flag is present because three dimensions (Brand alignment, Integration potential, and Quality/creative potential) scored at or below 4. This is primarily due to the fundamental incompatibility of a real-world brand with the film's fantasy setting and the specific nature of the title's protagonist. Resolving this flag would require considering a title with significantly higher integration potential and brand alignment.",
+      "roi_result": {
+        "title_id": "T11",
+        "title": "The Lord of the Rings: The Hunt for Gollum",
+        "integration_feasible": false,
+        "feasibility_note": "Fantasy world setting (Middle-earth). No real-world environment. In-film hero integration not possible regardless of fee.",
+        "combined_viewership": 0.0,
+        "scenarios": [],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T11\nTITLE: The Lord of the Rings: The Hunt for Gollum\n\nD1 - Audience reach and demographic fit: 5/10 \u2014 While the film has global recognition and nostalgia appeal, its core fantasy demographic skews narrower than the brand's broad family and 18-49 target, with limited guaranteed Gen Z crossover.\nD9 - Key market activation fit: 10/10 \u2014 This film promises major global premieres in key markets like London and potentially New Zealand, offering significant activation opportunities across the brand's priority international regions.\n\nPARTIAL_SCORE: 15\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T11\nTITLE: The Lord of the Rings: The Hunt for Gollum\n\nD2 - Brand alignment and safety: 3/10 \u2014 While a beloved legacy IP, the dark fantasy setting and often grim themes of The Lord of the Rings are not inherently aligned with a warm, approachable CPG brand and could create tonal dissonance.\nD5 - Integration potential: 1/10 \u2014 Integration is structurally impossible as the fantasy world of Middle-earth does not accommodate real-world consumer brands within its narrative.\nD8 - Relationship fostering opportunity: 9/10 \u2014 Partnership opens access to a major studio franchise ecosystem with multiple upcoming relevant titles, and the studio has a history of collaborative relationships with talent known for brand partnerships.\nD10 - Quality and creative potential: 4/10 \u2014 The narrative connection between a mass-market CPG brand and the specific lore of The Hunt for Gollum is weak and would require significant creative effort to make feel authentic.\n\nPARTIAL_SCORE: 17\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T11\nTITLE: The Lord of the Rings: The Hunt for Gollum\n\nD3 - Cultural moment and earned media potential: 7/10 \u2014 The Lord of the Rings IP has a dedicated global fanbase that will generate significant press and social conversation, particularly given the director Andy Serkis's involvement and the anticipation for new Middle-earth stories.\nD7 - Talent alignment and promotional commitment: 5/10 \u2014 While Andy Serkis is a recognizable figure, the film's lead is Gollum, a character performance capture role with limited direct talent promotional availability outside of the actor himself, and the ensemble cast's promotional commitment to brand partnerships is not yet established for this specific film.",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T11\nTITLE: The Lord of the Rings: The Hunt for Gollum\n\nD4 - Activation runway and timing: 9 \u2014 There are 18 months from today (June 2026) to the film's December 2027 release, enabling full co-branded product development.\nD6 - Franchise activation precedent: 9 \u2014 Clean franchise-specific comp data is available for the Lord of the Rings IP, with prior successful CPG partnerships to draw from.\n\nPARTIAL_SCORE: 18\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: NO"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    },
+    {
+      "title_id": "T15",
+      "title": "Narnia: The Magician's Nephew",
+      "scoring_role": "edge_case",
+      "final_scorecard": "TITLE: Narnia: The Magician's Nephew\nTOTAL SCORE: 52/100\nROUTE TO HUMAN: NO\nLOW CONFIDENCE FLAG: YES \u2014 3 dimensions scored at or below 4: D5, D6, D9; D6 comp data unavailable or release at risk\nCONSISTENCY FLAG: NO\n\nDIMENSION SCORES:\n1. Audience reach and demographic fit: 7/10 \u2014 The Narnia franchise has a strong appeal to families and adults who grew up with the books, aligning well with the brand's target demographics and nostalgia equity, and can capture Gen Z interest with a modern adaptation.\n2. Brand alignment and safety: 9/10 \u2014 The Narnia IP is a beloved, family-friendly fantasy world with strong nostalgia equity that directly aligns with the brand's positioning and target audience.\n3. Cultural moment and earned media potential: 5/10 \u2014 While Narnia is a globally recognized IP with strong nostalgia, a Netflix release without confirmed theatrical event status limits its potential for broad earned media and sustained social conversation compared to a major theatrical tentpole.\n4. Activation runway and timing: 7/10 \u2014 There are 7 months from today (June 2026) until the film's release in January 2027, allowing for limited-edition packaging and co-branded content.\n5. Integration potential: 1/10 \u2014 As a fantasy film set in a world where a magical land of talking animals exists, direct product integration of real-world CPG items is structurally impossible and would break the narrative immersion.\n6. Franchise activation precedent: 2/10 \u2014 No reliable theatrical comp data is available for this Netflix-only release, significantly limiting confidence.\n7. Talent alignment and promotional commitment: 5/10 \u2014 As a new iteration of a beloved IP, the lead talent is not yet established or widely recognized for their promotional commitment to brand partnerships outside of the film's own campaign.\n8. Relationship fostering opportunity: 5/10 \u2014 While Narnia is a valuable IP, Netflix's track record with brand partnerships on their original fantasy films can be inconsistent, and the ATL creative team's willingness to deeply collaborate on promotional campaigns is not yet established for this specific project.\n9. Key market activation fit: 3/10 \u2014 As a Netflix release, it lacks a traditional theatrical premiere footprint and relies on a split release window, limiting distinct global activation moments and premium event opportunities for the brand.\n10. Quality and creative potential: 8/10 \u2014 There is strong creative potential for a brand narrative connection based on themes of wonder, discovery, and the transition from the ordinary world to an extraordinary one, which can be authentically linked to the brand's legacy and appeal across generations.\n\nACC IN-FILM ROI PROJECTION:\n**LOW CONFIDENCE IN PROJECTION**\nIntegration feasible: No\nFeasibility note: Fantasy world setting (Narnia). Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.\nViewership estimate: 0.0 (in-film integration not possible)\nTop scenarios by ROI multiplier: None available as in-film integration is not feasible.\n\nSCORING NOTES:\nThis score has a Low Confidence Flag because three dimensions (Integration Potential, Franchise Activation Precedent, Key Market Activation Fit) scored at or below 4 points. Additionally, D6 data on comparable titles for this Netflix-only release is unavailable, which further contributes to the low confidence. A human gate reviewer should consider the limited in-film integration potential and the challenges in assessing franchise activation precedents for streaming-only releases.",
+      "roi_result": {
+        "title_id": "T15",
+        "title": "Narnia: The Magician's Nephew",
+        "integration_feasible": false,
+        "feasibility_note": "Fantasy world setting (Narnia). Storyline does not take place in the real world. In-film hero integration not possible regardless of fee.",
+        "combined_viewership": 0.0,
+        "scenarios": [],
+        "low_confidence": false,
+        "confidence_note": ""
+      },
+      "cluster_outputs": {
+        "audience_market": "AGENT: audience_market_agent\nTITLE_ID: T15\nTITLE: Narnia: The Magician's Nephew\n\nD1 - Audience reach and demographic fit: 7/10 \u2014 The Narnia franchise has a strong appeal to families and adults who grew up with the books, aligning well with the brand's target demographics and nostalgia equity, and can capture Gen Z interest with a modern adaptation.\nD9 - Key market activation fit: 3/10 \u2014 As a Netflix release, it lacks a traditional theatrical premiere footprint and relies on a split release window, limiting distinct global activation moments and premium event opportunities for the brand.\n\nPARTIAL_SCORE: 10\nDIMENSIONS_SCORED: D1, D9",
+        "brand_creative": "AGENT: brand_creative_agent\nTITLE_ID: T15\nTITLE: Narnia: The Magician's Nephew\n\nD2 - Brand alignment and safety: 9 \u2014 The Narnia IP is a beloved, family-friendly fantasy world with strong nostalgia equity that directly aligns with the brand's positioning and target audience.\nD5 - Integration potential: 1 \u2014 As a fantasy film set in a world where a magical land of talking animals exists, direct product integration of real-world CPG items is structurally impossible and would break the narrative immersion.\nD8 - Relationship fostering opportunity: 5 \u2014 While Narnia is a valuable IP, Netflix's track record with brand partnerships on their original fantasy films can be inconsistent, and the ATL creative team's willingness to deeply collaborate on promotional campaigns is not yet established for this specific project.\nD10 - Quality and creative potential: 8 \u2014 There is strong creative potential for a brand narrative connection based on themes of wonder, discovery, and the transition from the ordinary world to an extraordinary one, which can be authentically linked to the brand's legacy and appeal across generations.\n\nPARTIAL_SCORE: 23\nDIMENSIONS_SCORED: D2, D5, D8, D10",
+        "cultural_talent": "AGENT: cultural_talent\nTITLE_ID: T15\nTITLE: Narnia: The Magician's Nephew\n\nD3 - Cultural moment and earned media potential: 5 \u2014 While Narnia is a globally recognized IP with strong nostalgia, a Netflix release without confirmed theatrical event status limits its potential for broad earned media and sustained social conversation compared to a major theatrical tentpole.\nD7 - Talent alignment and promotional commitment: 5 \u2014 As a new iteration of a beloved IP, the lead talent is not yet established or widely recognized for their promotional commitment to brand partnerships outside of the film's own campaign.\n\nPARTIAL_SCORE: 10\nDIMENSIONS_SCORED: D3, D7",
+        "business_roi": "AGENT: business_roi_agent\nTITLE_ID: T15\nTITLE: Narnia: The Magician's Nephew\n\nD4 - Activation runway and timing: 7 \u2014 There are 7 months from today (June 2026) until the film's release in January 2027, allowing for limited-edition packaging and co-branded content.\nD6 - Franchise activation precedent: 2 \u2014 No reliable theatrical comp data is available for this Netflix-only release, significantly limiting confidence.\n\nPARTIAL_SCORE: 9\nDIMENSIONS_SCORED: D4, D6\nLOW_CONFIDENCE_D6: YES"
+      },
+      "sway_verdict": "SWAY CHECK: PASS\nROUTING CONSISTENCY: CONFIRMED\nNOTE-SCORE ALIGNMENT: CONFIRMED\nLOW-CONFIDENCE CONSISTENCY: CONFIRMED\nROI-FEASIBILITY ALIGNMENT: CONFIRMED\n\nSWAY NOTES:\nThis scorecard is internally consistent across all checks.",
+      "run_timestamp": "2026-06-24T14:50:21.873728"
+    }
+  ],
+  "summary": {
+    "total_scored": 15,
+    "routed_to_human": 6,
+    "archived": 9,
+    "gate_threshold": 65
+  }
+}

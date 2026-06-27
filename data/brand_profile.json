@@ -1,0 +1,14 @@
+{
+  "name": "GenericCPG",
+  "description": "Mass-market CPG brand with broad family and adult consumer base. Legacy brand with nostalgia equity. Targets 18-49 with Gen Z extension goal. Seeks cultural relevance, awareness amplification, and sales lift through entertainment partnerships.",
+  "positioning": "Iconic, approachable, culturally present across generations",
+  "audience_priorities": ["families", "Gen Z", "18-49 adults", "nostalgia consumers"],
+  "partnership_goals": ["brand awareness", "cultural relevance", "retail lift", "earned media"],
+  "integration_fee_tiers": {
+    "note": "Fixed cash fees for in-film integration. These are synthetic placeholders for the public repo. Swap for actual negotiated fees in private/client versions.",
+    "small": 50000,
+    "medium": 150000,
+    "large": 400000,
+    "tentpole": 750000
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "T01": {
+    "title": "Spider-Man: Brand New Day",
+    "has_inconsistency": true,
+    "flagged_dimensions": [
+      "D5: run1=5, run2=7, variance=2"
+    ],
+    "run1_scores": {
+      "D1": 7,
+      "D9": 7,
+      "D2": 7,
+      "D5": 5,
+      "D8": 7,
+      "D10": 7,
+      "D3": 8,
+      "D7": 7,
+      "D4": 2,
+      "D6": 7
+    },
+    "run2_scores": {
+      "D1": 7,
+      "D9": 7,
+      "D2": 7,
+      "D5": 7,
+      "D8": 8,
+      "D10": 8,
+      "D3": 8,
+      "D7": 7,
+      "D4": 2,
+      "D6": 7
+    }
+  },
+  "T02": {
+    "title": "Avengers: Doomsday",
+    "has_inconsistency": true,
+    "flagged_dimensions": [
+      "D6: run1=7, run2=9, variance=2"
+    ],
+    "run1_scores": {
+      "D1": 9,
+      "D9": 9,
+      "D2": 7,
+      "D5": 7,
+      "D8": 9,
+      "D10": 9,
+      "D3": 10,
+      "D7": 9,
+      "D4": 9,
+      "D6": 7
+    },
+    "run2_scores": {
+      "D1": 9,
+      "D9": 9,
+      "D2": 7,
+      "D5": 7,
+      "D8": 9,
+      "D10": 9,
+      "D3": 10,
+      "D7": 9,
+      "D4": 8,
+      "D6": 9
+    }
+  },
+  "T04": {
+    "title": "Focker In-Law",
+    "has_inconsistency": false,
+    "flagged_dimensions": [],
+    "run1_scores": {
+      "D1": 6,
+      "D9": 6,
+      "D2": 7,
+      "D5": 7,
+      "D8": 5,
+      "D10": 6,
+      "D3": 5,
+      "D7": 7,
+      "D4": 3,
+      "D6": 5
+    },
+    "run2_scores": {
+      "D1": 5,
+      "D9": 5,
+      "D2": 7,
+      "D5": 7,
+      "D8": 5,
+      "D10": 6,
+      "D3": 5,
+      "D7": 7,
+      "D4": 3,
+      "D6": 5
+    }
+  }
+}

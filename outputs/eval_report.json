@@ -1,0 +1,66 @@
+{
+  "eval_run_timestamp": "2026-06-26T10:43:19.619843",
+  "overall_result": "PASS",
+  "tests": [
+    {
+      "test": "FC1",
+      "description": "All 15 titles scored (503 crash / early-exit check)",
+      "expected": 15,
+      "actual": 15,
+      "result": "PASS"
+    },
+    {
+      "test": "FC2",
+      "description": "No title below 65 routed to human",
+      "failures": [],
+      "result": "PASS"
+    },
+    {
+      "test": "FC3",
+      "description": "No title at or above 65 archived",
+      "failures": [],
+      "result": "PASS"
+    },
+    {
+      "test": "FC4",
+      "description": "SWAY flag count <= 3 (>3 = systemic prompt drift)",
+      "sway_flag_count": 1,
+      "sway_flagged_titles": [
+        "T14"
+      ],
+      "result": "PASS"
+    },
+    {
+      "test": "GI1",
+      "description": "Gate threshold confirmed at 65",
+      "reported_threshold": 65,
+      "result": "PASS"
+    },
+    {
+      "test": "GI2",
+      "description": "Per-title run timestamp present in scores.json",
+      "result": "PASS",
+      "sample_timestamp": "2026-06-24T14:50:21.873728"
+    }
+  ],
+  "sway_flag_count": 1,
+  "sway_flagged_titles": [
+    "T14"
+  ],
+  "consistency_flags": [
+    {
+      "title_id": "T01",
+      "title": "Spider-Man: Brand New Day",
+      "flagged_dimensions": [
+        "D5: run1=5, run2=7, variance=2"
+      ]
+    },
+    {
+      "title_id": "T02",
+      "title": "Avengers: Doomsday",
+      "flagged_dimensions": [
+        "D6: run1=7, run2=9, variance=2"
+      ]
+    }
+  ]
+}
