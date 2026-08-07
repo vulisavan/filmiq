@@ -166,9 +166,7 @@ outweighs the absence of in-film presence.
 ## Dimension 6: Franchise Activation Precedent
 **What this measures:** Whether clean, franchise-specific comp data exists
 to support the partnership case — and what that comp history implies for
-the activation ceiling. This dimension scores the quality and depth of
-available evidence, not the ACC in-film ROI calculation (which is produced
-separately by the ROI sub-agent using the proprietary exposure formula).
+the activation ceiling. This dimension scores the quality and depth of available evidence, not the in-film ROI calculation (which is produced separately by the ROI sub-agent using the proprietary exposure formula).
 
 **Why it matters:** The number the agent produces is only as trustworthy
 as the data underneath it. A scored partnership built on genre-level
@@ -179,8 +177,7 @@ in a structured comp lookup, not the model's opinion. If comp data is
 unavailable, the score is capped at 5 and a low-confidence flag is returned.
 
 **What this dimension does not measure:** The actual dollar value of in-film
-integration. That calculation uses the ACC proprietary formula and is
-produced by the ROI sub-agent running in parallel at the orchestrator level.
+integration. That calculation uses the proprietary formula and is produced by the ROI sub-agent running in parallel at the orchestrator level.
 The two outputs serve different purposes: this dimension flags data confidence
 for the scoring chain; the ROI sub-agent produces the client-deliverable figure.
 
