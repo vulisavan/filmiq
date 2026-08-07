@@ -193,7 +193,10 @@ filmiq/
 ├── eval_harness.py              # Test harness -- six tests, PASS/FAIL/WARN
 ├── SKILL.md                     # 10-dimension scoring rubric (Concept 2)
 ├── config.ini                   # Model assignments, thresholds, CPM config
-├── app.py                       # ADK app entry point
+├── filmiq_app.py                # ADK app entry point
+├── agents-cli-manifest.yaml     # Deployment manifest for agents-cli
+├── GEMINI.md                    # Gemini-specific project notes
+├── uv.lock                      # Locked dependency versions
 ├── arch_fixed.png               # Architecture diagram
 ├── filmIQ_CoverImage.png        # Kaggle submission cover image
 ├── agents/
@@ -208,6 +211,8 @@ filmiq/
 ├── data/
 │   ├── slate.json               # 15-title film slate
 │   └── brand_profile.json       # Brand profile (GenericCPG)
+├── deployment/
+│   └── terraform/               # Infrastructure-as-code for deployment
 ├── outputs/
 │   ├── scores.json              # Cached slate run output
 │   ├── consistency_report.json
