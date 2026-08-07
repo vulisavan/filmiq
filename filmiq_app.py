@@ -1,17 +1,12 @@
 """
-app.py
-ADK app entry point for the ACC opportunity scorer.
-
-Launch: uv run adk web app
-from the opportunity-scorer directory.
-
+filmiq_app.py
+ADK app entry point for filmIQ.
+Launch: uv run adk web filmiq_app
+from the filmiq directory.
 The orchestrator_agent is the root agent the ADK playground connects to.
 Sub-agents are instantiated by the orchestrator at runtime.
 """
-
 from google.adk.apps.app import App
-from google.adk.workflow import Workflow, node, Edge, START
-
 from orchestrator import orchestrator_agent
 
 # Wrap the orchestrator agent in an ADK App.
