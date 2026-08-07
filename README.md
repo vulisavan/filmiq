@@ -284,3 +284,11 @@ Reads from `outputs/scores.json`. No API calls. Returns PASS, FAIL, or WARN with
 - **Framework:** Google ADK 2.2.0
 - **Models:** gemini-2.5-flash (ranking_agent, sway_checker), gemini-2.5-flash-lite (all cluster agents and roi_subagent)
 - **Media Gallery:** arch_fixed.png (architecture diagram), filmIQ_CoverImage.png (cover), Antigravity_IDE_eval_harness_screenshot.png (eval harness PASS + code comments), Antigravity_IDE_Screenshot_Concept5.png (deploy command in Antigravity terminal), Google_Cloud_Agent_Platform_Deployment_Image.png (live sessions on Agent Platform)
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+This project includes Google ADK template files under the Apache License 2.0, located in `app/` and `tests/`. All other code is original to this project and covered under the MIT License above.
