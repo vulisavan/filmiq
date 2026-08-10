@@ -43,6 +43,7 @@ from agents.cultural_talent import create_cultural_talent_agent
 from agents.business_roi import create_business_roi_agent
 from agents.roi_subagent import create_roi_subagent, run_roi_calculation
 from agents.ranking_agent import (
+    build_summary,
     create_ranking_agent,
     format_scorecard_for_ranking_agent,
     parse_partial_scorecard,
@@ -161,12 +162,13 @@ async def score_single_title(
         "confidence_note": roi_result.confidence_note,
     }
 
-    ranking_input = format_scorecard_for_ranking_agent(
+    summary = build_summary(
         title=title,
         partial_outputs=partial_outputs,
         roi_result_json=json.dumps(roi_dict),
         d6_low_confidence=d6_lc,
     )
+    ranking_input = json.dumps(summary, indent=2)
 
     # --- Step 6: Ranking agent formats final output ---
     final_output = await _run_agent(ranking_agent, ranking_input)
@@ -176,6 +178,7 @@ async def score_single_title(
         "title": title["title"],
         "scoring_role": title.get("scoring_role", ""),
         "final_scorecard": final_output,
+        "gate_summary": summary,
         "roi_result": roi_result.__dict__,
         "cluster_outputs": {
             "audience_market": audience_out,
@@ -361,7 +364,7 @@ async def score_full_slate() -> tuple[list[dict], dict]:
         print(f"  [SWAY] {title['id']}: {sway_status}")
 
         results.append(result)
-        print(f"  Done. Check final_scorecard for ROUTE TO HUMAN decision.")
+        print(f"  Done. See gate_summary.route_to_human for the routing decision.")
 
     # Stage 5: Self-correction loop -- second pass on sample after full slate scores
     print(f"\n[self-correction] Running second pass on {CONSISTENCY_SAMPLE_SIZE} titles...")
@@ -399,8 +402,7 @@ def route_results(results: list[dict]) -> dict:
     archived = []
 
     for r in results:
-        scorecard = r["final_scorecard"]
-        if "ROUTE TO HUMAN: YES" in scorecard.upper():
+        if r["gate_summary"]["route_to_human"]:
             human_queue.append(r)
         else:
             archived.append(r)

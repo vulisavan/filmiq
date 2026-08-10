@@ -120,17 +120,16 @@ def check_consistency(
 # Final output formatter
 # ---------------------------------------------------------------------------
 
-def format_scorecard_for_ranking_agent(
+def build_summary(
     title: dict,
     partial_outputs: list[str],
     roi_result_json: str,
     d6_low_confidence: bool = False,
     second_run_scores: Optional[dict] = None,
-) -> str:
+) -> dict:
     """
-    Builds the structured input the ranking agent LLM receives.
-    Aggregation and gate logic are deterministic (above).
-    The LLM formats the final narrative output.
+    Aggregates cluster scorecards and applies the deterministic gate.
+    Returns a dict so callers can read route_to_human directly.
     """
     aggregated = aggregate_scorecards(partial_outputs)
     scores = aggregated["scores"]
@@ -161,7 +160,26 @@ def format_scorecard_for_ranking_agent(
         "dimension_reasons": reasons,
         "roi_calculation": roi_result_json,
     }
+    return summary
+
+
+def format_scorecard_for_ranking_agent(
+    title: dict,
+    partial_outputs: list[str],
+    roi_result_json: str,
+    d6_low_confidence: bool = False,
+    second_run_scores: Optional[dict] = None,
+) -> str:
+    """
+    Builds the structured input the ranking agent LLM receives.
+    Aggregation and gate logic are deterministic (above).
+    The LLM formats the final narrative output.
+    """
+    summary = build_summary(
+        title, partial_outputs, roi_result_json, d6_low_confidence, second_run_scores
+    )
     return json.dumps(summary, indent=2)
+
 
 
 # ---------------------------------------------------------------------------
