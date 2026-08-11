@@ -153,7 +153,9 @@ This is the human-led sandwich applied at the IDE level. The build process mirro
 
 ## Eval Harness
 
-`eval_harness.py` is a separate test script. It does not re-score films or call any APIs. It reads the output of a completed slate run from `outputs/scores.json` and tests six conditions:
+`eval_harness.py` is a separate test script. It does not re-score films or call any APIs. It reads the output of a completed slate run from `outputs/scores.json` and tests six conditions: 
+
+filmIQ's own ADK endpoint integration is untested until B2; the one integration test remaining in this repo (`test_agent_runtime_app.py`) exercises the deploy runtime's plumbing -- streaming, feedback validation -- not filmIQ's scoring agents.
 
 | Test | Condition Tested |
 |---|---|

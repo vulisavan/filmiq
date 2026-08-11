@@ -1,3 +1,11 @@
+"""
+Tests the ADK deployment runtime (AgentEngineApp): streaming interface and
+feedback validation. Exercises Google's scaffolded weather-demo agent, not
+filmIQ's scoring pipeline -- this is a test of the deploy wrapper's plumbing,
+independent of which agent is plugged in. See B2 for wiring filmIQ into this
+runtime.
+"""
+
 # Copyright 2026 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
