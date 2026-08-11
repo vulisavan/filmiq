@@ -64,6 +64,7 @@ HUMAN_GATE = int(_config["thresholds"]["human_gate"])
 SLATE_PATH = Path(__file__).parent / _config["paths"]["slate"]
 BRAND_PROFILE_PATH = Path(__file__).parent / _config["paths"]["brand_profile"]
 SCORES_OUTPUT = Path(__file__).parent / _config["paths"]["scores_output"]
+SCORES_CHECKPOINT = SCORES_OUTPUT.parent / "scores_checkpoint.json"
 
 # Self-correction: titles sampled for a second scoring run.
 # Sample is the first N titles with integration_feasible=True to keep token
@@ -230,10 +231,13 @@ async def _run_agent(agent: LlmAgent, input_text: str) -> str:
             return result_text.strip()
 
         except Exception as e:
-            is_503 = "503" in str(e) or "UNAVAILABLE" in str(e)
-            if is_503 and attempt < 2:
+            is_retryable = (
+                "503" in str(e) or "UNAVAILABLE" in str(e)
+                or "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
+            )
+            if is_retryable and attempt < 2:
                 delay = retry_delays[attempt]
-                print(f"    [retry] 503 from Google API -- waiting {delay}s before retry {attempt + 2}/3...")
+                print(f"    [retry] transient error from Google API -- waiting {delay}s before retry {attempt + 2}/3...")
                 await asyncio.sleep(delay)
                 continue
             raise
@@ -366,6 +370,8 @@ async def score_full_slate() -> tuple[list[dict], dict]:
         print(f"  [SWAY] {title['id']}: {sway_status}")
 
         results.append(result)
+        with open(SCORES_CHECKPOINT, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, default=str)
         print(f"  Done. See summary.route_to_human for the routing decision.")
 
     # Stage 5: Self-correction loop -- second pass on sample after full slate scores
