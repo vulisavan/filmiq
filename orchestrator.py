@@ -238,7 +238,7 @@ async def _run_agent(agent: LlmAgent, input_text: str) -> str:
                 continue
             raise
 
-raise RuntimeError(
+    raise RuntimeError(
         f"_run_agent exhausted all 3 attempts for {agent.name} without returning "
         "or raising. Unreachable under the current retry logic; if you are seeing "
         "this, the loop was edited."
