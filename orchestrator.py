@@ -200,7 +200,6 @@ async def _run_agent(agent: LlmAgent, input_text: str) -> str:
     exponential backoff: 30s, then 60s, then fails.
     """
     retry_delays = [30, 60]
-    last_error = None
 
     for attempt in range(3):
         try:
@@ -231,7 +230,6 @@ async def _run_agent(agent: LlmAgent, input_text: str) -> str:
             return result_text.strip()
 
         except Exception as e:
-            last_error = e
             is_503 = "503" in str(e) or "UNAVAILABLE" in str(e)
             if is_503 and attempt < 2:
                 delay = retry_delays[attempt]
@@ -240,7 +238,11 @@ async def _run_agent(agent: LlmAgent, input_text: str) -> str:
                 continue
             raise
 
-    raise last_error
+raise RuntimeError(
+        f"_run_agent exhausted all 3 attempts for {agent.name} without returning "
+        "or raising. Unreachable under the current retry logic; if you are seeing "
+        "this, the loop was edited."
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -364,7 +366,7 @@ async def score_full_slate() -> tuple[list[dict], dict]:
         print(f"  [SWAY] {title['id']}: {sway_status}")
 
         results.append(result)
-        print(f"  Done. See gate_summary.route_to_human for the routing decision.")
+        print(f"  Done. See summary.route_to_human for the routing decision.")
 
     # Stage 5: Self-correction loop -- second pass on sample after full slate scores
     print(f"\n[self-correction] Running second pass on {CONSISTENCY_SAMPLE_SIZE} titles...")
