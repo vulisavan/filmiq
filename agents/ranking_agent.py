@@ -135,17 +135,37 @@ def build_summary(
     scores = aggregated["scores"]
     reasons = aggregated["reasons"]
 
-    # Ensure all 10 dimensions present; fill missing with 5/unknown
+    # Record which dimensions no cluster agent scored, BEFORE any fill writes.
+    # Membership, not value: a future rule may legitimately assign a real 5,
+    # and a value-based check would report that intentional score as fabricated.
     expected = [f"D{i}" for i in range(1, 11)]
-    for dim in expected:
-        if dim not in scores:
-            scores[dim] = 5
-            reasons[dim] = "Dimension not scored by any cluster agent — defaulting to 5."
+    defaulted_dimensions = [dim for dim in expected if dim not in scores]
+
+    # Fill unscored dimensions with 0, not a mid-range value.
+    # LC_FLOOR is 4; the previous default of 5 sat one point above it, so a
+    # fabricated score was invisible to check_low_confidence — ten defaulted
+    # dimensions returned (False, "") on a total of 50. At 0 a fabricated score
+    # falls under the floor and counts toward the low-confidence trigger.
+    for dim in defaulted_dimensions:
+        scores[dim] = 0
+        reasons[dim] = "No cluster agent scored this dimension. Score not earned."
 
     total = sum(scores.values())
     route_to_human = apply_gate(total)
     is_lc, lc_reason = check_low_confidence(scores, d6_low_confidence)
     has_inconsistency, inconsistent_dims = check_consistency(scores, second_run_scores)
+
+    # A fabricated dimension now lowers the total, pushing the title away from
+    # the gate rather than toward it. Escalate explicitly so a parse failure
+    # cannot archive a title without review.
+    if defaulted_dimensions:
+        route_to_human = True
+        is_lc = True
+        _note = (
+            f"{len(defaulted_dimensions)} dimension(s) not scored by any cluster "
+            f"agent: {', '.join(defaulted_dimensions)}"
+        )
+        lc_reason = f"{lc_reason}; {_note}" if lc_reason else _note
 
     summary = {
         "title_id": title["id"],
@@ -156,6 +176,7 @@ def build_summary(
         "low_confidence_reason": lc_reason,
         "consistency_flag": has_inconsistency,
         "inconsistent_dimensions": inconsistent_dims,
+        "defaulted_dimensions": defaulted_dimensions,
         "dimension_scores": scores,
         "dimension_reasons": reasons,
         "roi_calculation": roi_result_json,
@@ -204,6 +225,10 @@ recalculate. Report what the JSON contains, formatted as shown below.
 Human gate threshold: {HUMAN_GATE} points.
 Low-confidence flag: fires when 2+ dimensions score {LC_FLOOR} or below,
 or when D6 comp data is unavailable.
+Unscored dimensions: a dimension that no cluster agent scored is recorded in
+defaulted_dimensions and given a score of 0. A 0 there means the dimension was
+never assessed, not that it scored badly. Any title with a non-empty
+defaulted_dimensions is routed to human review.
 Consistency flag: fires when the same title scored twice shows variance
 greater than {CONSISTENCY_LIMIT} point on any dimension.
 
@@ -214,6 +239,7 @@ TOTAL SCORE: [X/100]
 ROUTE TO HUMAN: [YES / NO]
 LOW CONFIDENCE FLAG: [YES — reason / NO]
 CONSISTENCY FLAG: [YES — affected dimensions / NO]
+UNSCORED DIMENSIONS: [comma-separated list from defaulted_dimensions / NONE]
 
 DIMENSION SCORES:
 1. Audience reach and demographic fit: [D1 score/10] — [D1 reason]
@@ -236,6 +262,8 @@ SCORING NOTES:
 [Write 1-3 plain-language sentences covering:
   - Any low-confidence flags and what would resolve them
   - Any consistency flags and which dimensions drifted
+  - Any dimensions in defaulted_dimensions, named, stating that the 0 reflects
+    an absent score rather than a poor one
   - Any edge cases the human gate reviewer should weigh
   - If no flags: one sentence confirming clean score]
 """,

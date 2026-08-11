@@ -11,6 +11,7 @@ from agents.ranking_agent import (
     LC_COUNT,
     LC_FLOOR,
     apply_gate,
+    build_summary,
     check_low_confidence,
     parse_partial_scorecard,
 )
@@ -117,3 +118,67 @@ def test_both_triggers_report_both_reasons() -> None:
     assert is_lc is True
     assert "dimensions scored" in reason
     assert "D6" in reason
+
+    # ---------------------------------------------------------------------------
+# build_summary — defaulted dimensions (F06)
+# ---------------------------------------------------------------------------
+
+TITLE = {"id": "T001", "title": "Test Title"}
+ROI_JSON = "{}"
+
+
+def scorecard(scores: dict[str, int]) -> str:
+    """Renders a cluster-agent output containing exactly the given dimensions."""
+    return "\n".join(
+        f"{dim} - Dimension {dim}: {score} — scored by a cluster agent"
+        for dim, score in scores.items()
+    )
+
+
+def all_ten(score: int = 5) -> dict[str, int]:
+    """A complete scorecard. 5 is above LC_FLOOR, so no dimension is low."""
+    return {f"D{i}": score for i in range(1, 11)}
+
+
+def test_defaulted_dimensions_lists_only_the_unscored_ones() -> None:
+    scores = all_ten()
+    del scores["D3"]
+    del scores["D7"]
+    result = build_summary(TITLE, [scorecard(scores)], ROI_JSON)
+    assert result["defaulted_dimensions"] == ["D3", "D7"]
+
+
+def test_a_defaulted_dimension_forces_routing_below_the_gate() -> None:
+    scores = all_ten()
+    del scores["D3"]
+    result = build_summary(TITLE, [scorecard(scores)], ROI_JSON)
+    # The gate on its own would archive this title.
+    assert apply_gate(result["total_score"]) is False
+    assert result["route_to_human"] is True
+
+
+def test_a_single_defaulted_dimension_forces_low_confidence() -> None:
+    scores = all_ten()
+    del scores["D3"]
+    result = build_summary(TITLE, [scorecard(scores)], ROI_JSON)
+    # One defaulted dimension is fewer than LC_COUNT, so check_low_confidence
+    # would not fire on its own. Only the F06 escalation sets this.
+    assert LC_COUNT > 1
+    assert result["low_confidence"] is True
+    assert "D3" in result["low_confidence_reason"]
+
+
+def test_a_defaulted_dimension_scores_zero_and_says_why() -> None:
+    scores = all_ten()
+    del scores["D3"]
+    result = build_summary(TITLE, [scorecard(scores)], ROI_JSON)
+    assert result["dimension_scores"]["D3"] == 0
+    assert len(result["dimension_scores"]) == 10
+    assert "not earned" in result["dimension_reasons"]["D3"].lower()
+
+
+def test_a_clean_scorecard_leaves_routing_to_the_gate() -> None:
+    result = build_summary(TITLE, [scorecard(all_ten())], ROI_JSON)
+    assert result["defaulted_dimensions"] == []
+    assert result["route_to_human"] is apply_gate(result["total_score"])
+

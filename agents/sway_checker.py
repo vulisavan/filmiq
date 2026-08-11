@@ -57,6 +57,8 @@ focused consistency check -- not a re-score. You check four things only:
    decision? Gate is {HUMAN_GATE} points. If ROUTE TO HUMAN is YES but the
    total is below {HUMAN_GATE}, or NO but the total is at or above {HUMAN_GATE},
    flag it. Otherwise confirm.
+   Exception: if UNSCORED DIMENSIONS lists any dimension, routing YES with a
+   total below {HUMAN_GATE} is correct and not an inconsistency. Confirm it.
 
 2. NOTE-SCORE ALIGNMENT: Do the SCORING NOTES contradict any dimension score?
    Example of a contradiction: D3 scores 9/10 but the note says "limited
