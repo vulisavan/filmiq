@@ -27,6 +27,11 @@ LC_FLOOR = int(_config["thresholds"]["low_confidence_dimension_floor"])
 LC_COUNT = int(_config["thresholds"]["low_confidence_count_trigger"])
 CONSISTENCY_LIMIT = int(_config["thresholds"]["consistency_variance_limit"])
 
+# Neutral midpoint written to D5 when a title is not integration-feasible.
+# Rubric-derived, not a tunable threshold — deliberately not in config.ini,
+# because changing it would change what the rubric anchor means.
+NEUTRAL_D5_FLOOR = 5
+
 
 # ---------------------------------------------------------------------------
 # Scorecard parser (deterministic — extracts structured data from agent output)
@@ -150,6 +155,31 @@ def build_summary(
         scores[dim] = 0
         reasons[dim] = "No cluster agent scored this dimension. Score not earned."
 
+    # Neutral floor: integration absence must not disqualify a title.
+    # Rubric D5 anchor (band 1-2): structural impossibility "does NOT
+    # disqualify, human resolves the tension." Summing the literal low score
+    # penalized the title on a rule the rubric disowns.
+    #
+    # Applied AFTER the fill loop deliberately. Written before it, the loop
+    # would overwrite the floor with 0 for any non-feasible title whose D5
+    # also failed to parse -- the floor silently defeated by the fill that
+    # follows it. Escalation is unaffected either way, because
+    # defaulted_dimensions is computed above both. Verified by moving the
+    # block and watching the placement test fail.
+    #
+    # d5_pre_floor is retained because the overwrite is destructive and INV-1
+    # must be able to recompute the un-floored total from stored output.
+    integration_feasible = title.get("integration_feasible", True)
+    feasibility_note = title.get("integration_feasibility_note", "")
+    d5_pre_floor = None
+    if not integration_feasible:
+        d5_pre_floor = scores.get("D5")
+        scores["D5"] = NEUTRAL_D5_FLOOR
+        reasons["D5"] = (
+            "Integration not structurally feasible. Neutral floor applied per "
+            "rubric D5 anchor; absence does not disqualify."
+        )
+       
     total = sum(scores.values())
     route_to_human = apply_gate(total)
     is_lc, lc_reason = check_low_confidence(scores, d6_low_confidence)
@@ -177,6 +207,9 @@ def build_summary(
         "consistency_flag": has_inconsistency,
         "inconsistent_dimensions": inconsistent_dims,
         "defaulted_dimensions": defaulted_dimensions,
+        "integration_feasible": integration_feasible,
+        "feasibility_note": feasibility_note,
+        "d5_pre_floor": d5_pre_floor,
         "dimension_scores": scores,
         "dimension_reasons": reasons,
         "roi_calculation": roi_result_json,

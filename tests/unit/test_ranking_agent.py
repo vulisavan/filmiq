@@ -3,13 +3,14 @@ Unit tests for the deterministic logic in agents/ranking_agent.py.
 
 These cover the pure functions only: no network, no API key, no cost.
 They describe behaviour that is already correct, so that the fixes in
-F05 and F06 can be made without silently breaking it.
+F05, F06 and F30 can be made without silently breaking it.
 """
 
 from agents.ranking_agent import (
     HUMAN_GATE,
     LC_COUNT,
     LC_FLOOR,
+    NEUTRAL_D5_FLOOR,
     apply_gate,
     build_summary,
     check_low_confidence,
@@ -125,6 +126,12 @@ def test_both_triggers_report_both_reasons() -> None:
 
 TITLE = {"id": "T001", "title": "Test Title"}
 ROI_JSON = "{}"
+NON_FEASIBLE_TITLE = {
+    "id": "T002",
+    "title": "Animated Test Title",
+    "integration_feasible": False,
+    "integration_feasibility_note": "Animated; no in-world product placement path.",
+}
 
 
 def scorecard(scores: dict[str, int]) -> str:
@@ -181,4 +188,55 @@ def test_a_clean_scorecard_leaves_routing_to_the_gate() -> None:
     result = build_summary(TITLE, [scorecard(all_ten())], ROI_JSON)
     assert result["defaulted_dimensions"] == []
     assert result["route_to_human"] is apply_gate(result["total_score"])
+
+
+# ---------------------------------------------------------------------------
+# F30 — neutral D5 floor for non-feasible titles
+# ---------------------------------------------------------------------------
+
+
+def test_non_feasible_title_gets_the_neutral_floor() -> None:
+    """A low D5 is replaced by the neutral floor and the total rises by the gap."""
+    scores = all_ten()
+    scores["D5"] = 2
+    raw_total = sum(scores.values())
+    result = build_summary(NON_FEASIBLE_TITLE, [scorecard(scores)], ROI_JSON)
+    assert result["dimension_scores"]["D5"] == NEUTRAL_D5_FLOOR
+    assert result["d5_pre_floor"] == 2
+    # INV-1 shape: removing the floor must reproduce the lower total.
+    assert result["total_score"] == raw_total - 2 + NEUTRAL_D5_FLOOR
+
+
+def test_feasible_title_keeps_its_scored_d5() -> None:
+    """The floor must not touch a feasible title, however low D5 scored."""
+    scores = all_ten()
+    scores["D5"] = 2
+    raw_total = sum(scores.values())
+    result = build_summary(TITLE, [scorecard(scores)], ROI_JSON)
+    assert result["dimension_scores"]["D5"] == 2
+    assert result["d5_pre_floor"] is None
+    assert result["total_score"] == raw_total
+
+
+def test_non_feasible_title_surfaces_its_feasibility() -> None:
+    """INV-2 groundwork: the flag and note reach the payload unnested."""
+    result = build_summary(NON_FEASIBLE_TITLE, [scorecard(all_ten())], ROI_JSON)
+    assert result["integration_feasible"] is False
+    assert result["feasibility_note"] != ""
+
+
+def test_an_unscored_d5_on_a_non_feasible_title_still_escalates() -> None:
+    """The floor runs after the fill, so the fill cannot overwrite it with 0."""
+    scores = all_ten()
+    del scores["D5"]
+    result = build_summary(NON_FEASIBLE_TITLE, [scorecard(scores)], ROI_JSON)
+    # defaulted_dimensions is computed above both the fill and the floor,
+    # so escalation fires regardless of their order.
+    assert "D5" in result["defaulted_dimensions"]
+    assert result["route_to_human"] is True
+    assert result["low_confidence"] is True
+    # d5_pre_floor captures what the fill wrote, not "no value" -- the fill
+    # runs first, so an unscored D5 is already 0 by the time the floor reads it.
+    assert result["d5_pre_floor"] == 0
+    assert result["dimension_scores"]["D5"] == NEUTRAL_D5_FLOOR
 
