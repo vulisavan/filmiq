@@ -206,3 +206,6 @@ tools/a2a-inspector/
 deployment_metadata.json
 
 orchestrator_backup.py
+
+# Transient per-title crash-recovery artifact; regenerated each run.
+outputs/scores_checkpoint.json
