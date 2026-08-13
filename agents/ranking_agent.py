@@ -32,6 +32,13 @@ CONSISTENCY_LIMIT = int(_config["thresholds"]["consistency_variance_limit"])
 # because changing it would change what the rubric anchor means.
 NEUTRAL_D5_FLOOR = 5
 
+# Rubric range, per SKILL.md line 12 ("Each dimension scores 1 to 10").
+# Hardcoded, not config: this is the rubric's definition, not a tunable dial.
+# A score outside this band is a malformed emission (F31), recorded as such
+# rather than clamped -- clamping would erase the evidence it was ever wrong.
+RUBRIC_MIN = 1
+RUBRIC_MAX = 10
+
 
 # ---------------------------------------------------------------------------
 # Scorecard parser (deterministic — extracts structured data from agent output)
@@ -47,6 +54,7 @@ def parse_partial_scorecard(agent_output: str) -> dict:
     """
     scores = {}
     reasons = {}
+    malformed = {}
     pattern = re.compile(
         r"(D\d+)\s*-\s*[^:]+:\s*(\d+)(?:/\d+)?\s*[\u2014\u2013\-]+\s*(.+)",
         re.IGNORECASE,
@@ -55,11 +63,19 @@ def parse_partial_scorecard(agent_output: str) -> dict:
         m = pattern.match(line.strip())
         if m:
             dim = m.group(1).upper()
-            score = min(int(m.group(2)), 10)
+            raw = int(m.group(2))
             reason = m.group(3).strip()
-            scores[dim] = score
-            reasons[dim] = reason
-    return {"scores": scores, "reasons": reasons}
+            # Range-check instead of clamping. min(x, 10) silently rewrote an
+            # out-of-range emission into a plausible 10, erasing the evidence it
+            # was ever wrong. A score outside RUBRIC_MIN..RUBRIC_MAX is recorded
+            # in `malformed`, never written to `scores`, so downstream sees a
+            # legal-scores-only dict and a separate record of what failed.
+            if RUBRIC_MIN <= raw <= RUBRIC_MAX:
+                scores[dim] = raw
+                reasons[dim] = reason
+            else:
+                malformed[dim] = raw
+    return {"scores": scores, "reasons": reasons, "malformed": malformed}
 
 
 def aggregate_scorecards(partial_outputs: list[str]) -> dict:
@@ -69,11 +85,13 @@ def aggregate_scorecards(partial_outputs: list[str]) -> dict:
     """
     all_scores = {}
     all_reasons = {}
+    all_malformed = {}
     for output in partial_outputs:
         parsed = parse_partial_scorecard(output)
         all_scores.update(parsed["scores"])
         all_reasons.update(parsed["reasons"])
-    return {"scores": all_scores, "reasons": all_reasons}
+        all_malformed.update(parsed["malformed"])
+    return {"scores": all_scores, "reasons": all_reasons, "malformed": all_malformed}
 
 
 def apply_gate(total_score: int) -> bool:
@@ -139,6 +157,7 @@ def build_summary(
     aggregated = aggregate_scorecards(partial_outputs)
     scores = aggregated["scores"]
     reasons = aggregated["reasons"]
+    malformed_dimensions = aggregated["malformed"]
 
     # Record which dimensions no cluster agent scored, BEFORE any fill writes.
     # Membership, not value: a future rule may legitimately assign a real 5,
@@ -188,13 +207,25 @@ def build_summary(
     # A fabricated dimension now lowers the total, pushing the title away from
     # the gate rather than toward it. Escalate explicitly so a parse failure
     # cannot archive a title without review.
-    if defaulted_dimensions:
+    # Force escalation on either failure mode, but keep the reasons distinct:
+    # a defaulted dimension was never scored; a malformed one was scored out of
+    # range. Same routing decision, two different explanations -- collapsing
+    # them into one note would relabel a bad emission as an absent one.
+    if defaulted_dimensions or malformed_dimensions:
         route_to_human = True
         is_lc = True
-        _note = (
-            f"{len(defaulted_dimensions)} dimension(s) not scored by any cluster "
-            f"agent: {', '.join(defaulted_dimensions)}"
-        )
+        _notes = []
+        if defaulted_dimensions:
+            _notes.append(
+                f"{len(defaulted_dimensions)} dimension(s) not scored by any cluster "
+                f"agent: {', '.join(defaulted_dimensions)}"
+            )
+        if malformed_dimensions:
+            _notes.append(
+                "out-of-range emission(s): "
+                + ", ".join(f"{d}={v}" for d, v in malformed_dimensions.items())
+            )
+        _note = "; ".join(_notes)
         lc_reason = f"{lc_reason}; {_note}" if lc_reason else _note
 
     summary = {
@@ -207,6 +238,7 @@ def build_summary(
         "consistency_flag": has_inconsistency,
         "inconsistent_dimensions": inconsistent_dims,
         "defaulted_dimensions": defaulted_dimensions,
+        "malformed_dimensions": malformed_dimensions,
         "integration_feasible": integration_feasible,
         "feasibility_note": feasibility_note,
         "d5_pre_floor": d5_pre_floor,

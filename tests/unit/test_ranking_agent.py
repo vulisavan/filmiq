@@ -33,11 +33,17 @@ def test_parses_well_formed_dimension_lines() -> None:
     assert parsed["reasons"]["D1"] == "Strong overlap with core demo"
 
 
-def test_caps_scores_above_ten() -> None:
-    """A score above the 0-10 range is clamped rather than accepted."""
-    parsed = parse_partial_scorecard("D3 - Cultural moment: 47 — Extremely high buzz")
-    assert parsed["scores"]["D3"] == 10
+def test_rejects_score_above_max() -> None:
+    """A score above the rubric max is recorded as malformed, not clamped or scored."""
+    parsed = parse_partial_scorecard("D3 - Cultural moment: 47 \u2014 Extremely high buzz")
+    assert "D3" not in parsed["scores"]
+    assert parsed["malformed"]["D3"] == 47
 
+def test_rejects_score_below_min() -> None:
+    """0 is below the rubric min (1-10); recorded malformed, not accepted as a real score."""
+    parsed = parse_partial_scorecard("D3 - Cultural moment: 0 \u2014 No presence")
+    assert "D3" not in parsed["scores"]
+    assert parsed["malformed"]["D3"] == 0
 
 def test_malformed_line_yields_no_dimension() -> None:
     """
