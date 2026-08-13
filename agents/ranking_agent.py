@@ -86,12 +86,18 @@ def aggregate_scorecards(partial_outputs: list[str]) -> dict:
     all_scores = {}
     all_reasons = {}
     all_malformed = {}
+    all_conflicting = {}
     for output in partial_outputs:
         parsed = parse_partial_scorecard(output)
+        # If a dimension appears in multiple scorecards, record it as conflicting
+        for dim, score in parsed["scores"].items():
+            if dim in all_scores:
+                all_conflicting[dim] = [all_scores[dim], score]
         all_scores.update(parsed["scores"])
         all_reasons.update(parsed["reasons"])
         all_malformed.update(parsed["malformed"])
-    return {"scores": all_scores, "reasons": all_reasons, "malformed": all_malformed}
+    return {"scores": all_scores, "reasons": all_reasons,
+            "malformed": all_malformed, "conflicting": all_conflicting}
 
 
 def apply_gate(total_score: int) -> bool:
@@ -158,6 +164,7 @@ def build_summary(
     scores = aggregated["scores"]
     reasons = aggregated["reasons"]
     malformed_dimensions = aggregated["malformed"]
+    conflicting_dimensions = aggregated["conflicting"]
 
     # Record which dimensions no cluster agent scored, BEFORE any fill writes.
     # Membership, not value: a future rule may legitimately assign a real 5,
@@ -207,11 +214,11 @@ def build_summary(
     # A fabricated dimension now lowers the total, pushing the title away from
     # the gate rather than toward it. Escalate explicitly so a parse failure
     # cannot archive a title without review.
-    # Force escalation on either failure mode, but keep the reasons distinct:
+    # Force escalation on any of the three failure modes, but keep the reasons distinct:
     # a defaulted dimension was never scored; a malformed one was scored out of
-    # range. Same routing decision, two different explanations -- collapsing
+    # range. Same routing decision, three different explanations -- collapsing
     # them into one note would relabel a bad emission as an absent one.
-    if defaulted_dimensions or malformed_dimensions:
+    if defaulted_dimensions or malformed_dimensions or conflicting_dimensions:
         route_to_human = True
         is_lc = True
         _notes = []
@@ -224,6 +231,11 @@ def build_summary(
             _notes.append(
                 "out-of-range emission(s): "
                 + ", ".join(f"{d}={v}" for d, v in malformed_dimensions.items())
+            )
+        if conflicting_dimensions:
+            _notes.append(
+                "dimension(s) scored by more than one agent: "
+                + ", ".join(f"{d}={v}" for d, v in conflicting_dimensions.items())
             )
         _note = "; ".join(_notes)
         lc_reason = f"{lc_reason}; {_note}" if lc_reason else _note
@@ -239,6 +251,7 @@ def build_summary(
         "inconsistent_dimensions": inconsistent_dims,
         "defaulted_dimensions": defaulted_dimensions,
         "malformed_dimensions": malformed_dimensions,
+        "conflicting_dimensions": conflicting_dimensions,
         "integration_feasible": integration_feasible,
         "feasibility_note": feasibility_note,
         "d5_pre_floor": d5_pre_floor,

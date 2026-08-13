@@ -11,6 +11,7 @@ from agents.ranking_agent import (
     LC_COUNT,
     LC_FLOOR,
     NEUTRAL_D5_FLOOR,
+    aggregate_scorecards,
     apply_gate,
     build_summary,
     check_low_confidence,
@@ -246,3 +247,28 @@ def test_an_unscored_d5_on_a_non_feasible_title_still_escalates() -> None:
     assert result["d5_pre_floor"] == 0
     assert result["dimension_scores"]["D5"] == NEUTRAL_D5_FLOOR
 
+# ---------------------------------------------------------------------------
+# F32 — a dimension scored by more than one agent
+# ---------------------------------------------------------------------------
+
+
+def test_aggregate_records_a_dimension_scored_by_two_agents() -> None:
+    """Two agents scoring the same dimension: the collision is recorded, not silent."""
+    aggregated = aggregate_scorecards([scorecard({"D5": 8}), scorecard({"D5": 3})])
+    assert "D5" in aggregated["conflicting"]
+    assert aggregated["scores"]["D5"] == 3  # last writer wins; the guard makes it visible, not prevented
+
+
+def test_a_conflicting_dimension_forces_routing() -> None:
+    # Full first card so defaulted_dimensions is empty — the collision is the
+    # only escalation trigger, not an unscored dimension.
+    result = build_summary(TITLE, [scorecard(all_ten()), scorecard({"D5": 3})], ROI_JSON)
+    assert result["defaulted_dimensions"] == []
+    assert "D5" in result["conflicting_dimensions"]
+    assert result["route_to_human"] is True
+
+
+def test_a_conflicting_dimension_names_itself_in_the_reason() -> None:
+    result = build_summary(TITLE, [scorecard(all_ten()), scorecard({"D5": 3})], ROI_JSON)
+    assert "D5" in result["low_confidence_reason"]
+    assert "more than one agent" in result["low_confidence_reason"]
