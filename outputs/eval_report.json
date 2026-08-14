@@ -1,5 +1,5 @@
 {
-  "eval_run_timestamp": "2026-06-26T10:43:19.619843",
+  "eval_run_timestamp": "2026-08-14T06:50:24.121854",
   "overall_result": "PASS",
   "tests": [
     {
@@ -24,10 +24,8 @@
     {
       "test": "FC4",
       "description": "SWAY flag count <= 3 (>3 = systemic prompt drift)",
-      "sway_flag_count": 1,
-      "sway_flagged_titles": [
-        "T14"
-      ],
+      "sway_flag_count": 0,
+      "sway_flagged_titles": [],
       "result": "PASS"
     },
     {
@@ -40,26 +38,32 @@
       "test": "GI2",
       "description": "Per-title run timestamp present in scores.json",
       "result": "PASS",
-      "sample_timestamp": "2026-06-24T14:50:21.873728"
+      "sample_timestamp": "2026-08-11T14:35:26.178102"
     }
   ],
-  "sway_flag_count": 1,
-  "sway_flagged_titles": [
-    "T14"
-  ],
+  "sway_flag_count": 0,
+  "sway_flagged_titles": [],
   "consistency_flags": [
     {
       "title_id": "T01",
       "title": "Spider-Man: Brand New Day",
       "flagged_dimensions": [
-        "D5: run1=5, run2=7, variance=2"
+        "D6: run1=9, run2=7, variance=2"
       ]
     },
     {
       "title_id": "T02",
       "title": "Avengers: Doomsday",
       "flagged_dimensions": [
-        "D6: run1=7, run2=9, variance=2"
+        "D7: run1=7, run2=9, variance=2"
+      ]
+    },
+    {
+      "title_id": "T04",
+      "title": "Focker In-Law",
+      "flagged_dimensions": [
+        "D7: run1=5, run2=7, variance=2",
+        "D6: run1=3, run2=5, variance=2"
       ]
     }
   ]
