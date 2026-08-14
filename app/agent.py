@@ -1,3 +1,4 @@
+# VENDORED ADK SCAFFOLD — not part of filmIQ. Stock google-adk starter template (weather/time demo agent). Real entry point: filmiq_app.py -> orchestrator.py. See app/README.md.
 # ruff: noqa
 # Copyright 2026 Google LLC
 #
