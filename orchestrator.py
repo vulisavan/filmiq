@@ -67,8 +67,8 @@ SCORES_OUTPUT = Path(__file__).parent / _config["paths"]["scores_output"]
 SCORES_CHECKPOINT = SCORES_OUTPUT.parent / "scores_checkpoint.json"
 
 # Self-correction: titles sampled for a second scoring run.
-# Sample is the first N titles with integration_feasible=True to keep token
-# cost bounded on free tier. Set to 3 for Stage 5 demonstration.
+# Sample is the first N titles of the slate; the cap bounds token cost on the
+# free tier. Set to 3 for Stage 5 demonstration.
 CONSISTENCY_SAMPLE_SIZE = 3
 
 # ---------------------------------------------------------------------------
@@ -271,9 +271,11 @@ async def run_consistency_check(
     Runs a second scoring pass on a sample of titles and compares dimension
     scores against the first run. Returns a dict of {title_id: consistency_result}.
 
-    Sample: first CONSISTENCY_SAMPLE_SIZE titles with integration_feasible=True.
-    Rationale: feasible titles have all ten dimensions scored; non-feasible
-    titles skip D6 via the ROI gate, making variance comparison partial.
+    Sample: the first CONSISTENCY_SAMPLE_SIZE titles of the slate. The cap
+    bounds token cost. There is no feasibility filter -- every title carries
+    all ten dimensions, the comparison uses raw pre-floor scores from both
+    runs, and non-feasible titles route to human, so they need variance
+    visibility too.
     """
     from agents.ranking_agent import check_consistency, aggregate_scorecards
 
@@ -285,9 +287,11 @@ async def run_consistency_check(
         aggregated = aggregate_scorecards(cluster_outs)
         first_run_scores[title_id] = aggregated["scores"]
 
-    # Select sample: feasible titles only, capped at CONSISTENCY_SAMPLE_SIZE
-    feasible_titles = [t for t in slate if t.get("integration_feasible", True)]
-    sample = feasible_titles[:CONSISTENCY_SAMPLE_SIZE]
+    # Sample the first CONSISTENCY_SAMPLE_SIZE titles of the slate. No feasibility
+    # filter: non-feasible titles route to human too (D5 floored, not archived),
+    # and the comparison uses raw pre-floor scores, so they are as comparable
+    # run-to-run as any other title.
+    sample = slate[:CONSISTENCY_SAMPLE_SIZE]
 
     consistency_results = {}
     for title in sample:
