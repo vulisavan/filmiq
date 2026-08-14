@@ -154,7 +154,6 @@ def build_summary(
     partial_outputs: list[str],
     roi_result_json: str,
     d6_low_confidence: bool = False,
-    second_run_scores: Optional[dict] = None,
 ) -> dict:
     """
     Aggregates cluster scorecards and applies the deterministic gate.
@@ -209,7 +208,6 @@ def build_summary(
     total = sum(scores.values())
     route_to_human = apply_gate(total)
     is_lc, lc_reason = check_low_confidence(scores, d6_low_confidence)
-    has_inconsistency, inconsistent_dims = check_consistency(scores, second_run_scores)
 
     # A fabricated dimension now lowers the total, pushing the title away from
     # the gate rather than toward it. Escalate explicitly so a parse failure
@@ -247,8 +245,6 @@ def build_summary(
         "route_to_human": route_to_human,
         "low_confidence": is_lc,
         "low_confidence_reason": lc_reason,
-        "consistency_flag": has_inconsistency,
-        "inconsistent_dimensions": inconsistent_dims,
         "defaulted_dimensions": defaulted_dimensions,
         "malformed_dimensions": malformed_dimensions,
         "conflicting_dimensions": conflicting_dimensions,
@@ -267,7 +263,6 @@ def format_scorecard_for_ranking_agent(
     partial_outputs: list[str],
     roi_result_json: str,
     d6_low_confidence: bool = False,
-    second_run_scores: Optional[dict] = None,
 ) -> str:
     """
     Builds the structured input the ranking agent LLM receives.
@@ -275,7 +270,7 @@ def format_scorecard_for_ranking_agent(
     The LLM formats the final narrative output.
     """
     summary = build_summary(
-        title, partial_outputs, roi_result_json, d6_low_confidence, second_run_scores
+        title, partial_outputs, roi_result_json, d6_low_confidence
     )
     return json.dumps(summary, indent=2)
 
@@ -307,8 +302,6 @@ Unscored dimensions: a dimension that no cluster agent scored is recorded in
 defaulted_dimensions and given a score of 0. A 0 there means the dimension was
 never assessed, not that it scored badly. Any title with a non-empty
 defaulted_dimensions is routed to human review.
-Consistency flag: fires when the same title scored twice shows variance
-greater than {CONSISTENCY_LIMIT} point on any dimension.
 
 OUTPUT FORMAT (return exactly this, no preamble):
 
@@ -316,7 +309,6 @@ TITLE: [title]
 TOTAL SCORE: [X/100]
 ROUTE TO HUMAN: [YES / NO]
 LOW CONFIDENCE FLAG: [YES — reason / NO]
-CONSISTENCY FLAG: [YES — affected dimensions / NO]
 UNSCORED DIMENSIONS: [comma-separated list from defaulted_dimensions / NONE]
 
 DIMENSION SCORES:
@@ -339,7 +331,6 @@ by ROI multiplier. If low confidence, state that prominently.]
 SCORING NOTES:
 [Write 1-3 plain-language sentences covering:
   - Any low-confidence flags and what would resolve them
-  - Any consistency flags and which dimensions drifted
   - Any dimensions in defaulted_dimensions, named, stating that the 0 reflects
     an absent score rather than a poor one
   - Any edge cases the human gate reviewer should weigh
