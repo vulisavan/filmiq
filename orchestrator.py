@@ -35,7 +35,6 @@ from google.adk import Runner
 from google.adk.agents.llm_agent import LlmAgent
 from google.adk.apps.app import App
 from google.adk.sessions import InMemorySessionService
-from google.adk.workflow import Edge, START, Workflow, node
 
 from agents.audience_market import create_audience_market_agent
 from agents.brand_creative import create_brand_creative_agent
@@ -486,8 +485,10 @@ def print_summary(routed: dict, consistency_report: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
-# ADK Workflow definition
-# Exposes the orchestrator as an ADK app for the playground and eval harness.
+# ADK app surface: playground and eval-harness entry point.
+# orchestrator_agent is NOT dead code: it is never called during a slate run
+# (orchestrator.py runs the pipeline directly), but filmiq_app.py imports it
+# as the root agent for `adk web` and the deploy surface. Do not delete it.
 # ---------------------------------------------------------------------------
 
 orchestrator_agent = LlmAgent(
