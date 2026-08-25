@@ -108,7 +108,7 @@ def apply_gate(total_score: int) -> bool:
 def check_low_confidence(scores: dict, d6_lc_flag: bool = False) -> tuple[bool, str]:
     """
     Flags low confidence if:
-      - Two or more dimensions score at or below LC_FLOOR (default 4), OR
+      - LC_COUNT or more dimensions score at or below LC_FLOOR, OR
       - D6 business_roi agent returned a low-confidence flag
     Returns (is_low_confidence, reason_string).
     """
@@ -296,7 +296,7 @@ Do not change any scores. Do not override the gate decision. Do not
 recalculate. Report what the JSON contains, formatted as shown below.
 
 Human gate threshold: {HUMAN_GATE} points.
-Low-confidence flag: fires when 2+ dimensions score {LC_FLOOR} or below,
+Low-confidence flag: fires when {LC_COUNT}+ dimensions score {LC_FLOOR} or below,
 or when D6 comp data is unavailable.
 Unscored dimensions: a dimension that no cluster agent scored is recorded in
 defaulted_dimensions and given a score of 0. A 0 there means the dimension was
