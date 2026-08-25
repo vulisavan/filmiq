@@ -37,8 +37,6 @@ import os
 from dataclasses import dataclass, field
 from typing import Optional
 
-from google.adk.agents.llm_agent import LlmAgent
-
 # ---------------------------------------------------------------------------
 # Config -- CPM rates and tier multipliers loaded from config.ini at runtime.
 # Rates are not hardcoded here; config.ini references internal methodology.
@@ -273,57 +271,3 @@ def _estimate_viewership_from_notes(title: dict) -> Optional[float]:
         "obvious_low_scorer": 15_000_000,
     }
     return role_defaults.get(role, None)
-
-
-# ---------------------------------------------------------------------------
-# ADK agent wrapper
-# Deterministic formula engine above; LLM formats the narrative output only.
-# ---------------------------------------------------------------------------
-
-def create_roi_subagent(model: str) -> LlmAgent:
-    """
-    Creates the ROI sub-agent. Calculation is deterministic (run_roi_calculation).
-    LLM formats output and surfaces flags in plain language.
-    """
-    return LlmAgent(
-        name="roi_subagent",
-        model=model,
-        instruction="""
-You are the in-film integration ROI calculator.
-
-You receive a JSON object with pre-calculated ROI results from the deterministic
-formula engine. Format these as a clean, client-ready summary.
-Do not recalculate. Do not invent numbers. Report exactly what the formula produced.
-
-TWO POSSIBLE INPUTS:
-
-1. integration_feasible = false:
-   Output exactly:
-   INTEGRATION FEASIBILITY: NOT FEASIBLE
-   REASON: [feasibility_note from input]
-   ROI PROJECTION: None -- integration fee investment not applicable.
-
-2. integration_feasible = true:
-   Output exactly:
-   INTEGRATION FEASIBILITY: FEASIBLE
-   ESTIMATED COMBINED VIEWERSHIP: [viewership] (comp-based; production uses first-party audience data)
-   LOW CONFIDENCE: [YES -- reason / NO]
-
-   HERO SCENARIO PROJECTIONS (excellent tier, 15s, streaming):
-   [For each scenario:]
-     [label] ([heroes] hero, $[fee] fee): Media value $[amount] | ROI [multiplier]x
-     [If narrative_integration is true, add on the same line:]
-       -- Narrative integration tier: filmmaker incentive for brand-as-story placement.
-         ROI multiplier reflects fee premium; value proposition includes earned narrative
-         presence beyond media value (e.g. brand used as prop or story element across scenes).
-
-   RECOMMENDED SCENARIO:
-   - If 1 or 2 hero has the highest ROI: name it, state the multiplier.
-   - If 3 hero is selected despite lower ROI: explain the narrative integration value.
-   - If no scenario exceeds 1.0x: flag that integration fee investment is not justified
-     at current viewership estimate and note what viewership would be required.
-
-If LOW CONFIDENCE is YES, state that prominently before the scenario table.
-Do not add commentary beyond what the numbers support.
-""",
-    )

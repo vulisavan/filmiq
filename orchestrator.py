@@ -43,7 +43,7 @@ from agents.audience_market import create_audience_market_agent
 from agents.brand_creative import create_brand_creative_agent
 from agents.cultural_talent import create_cultural_talent_agent
 from agents.business_roi import create_business_roi_agent
-from agents.roi_subagent import create_roi_subagent, run_roi_calculation
+from agents.roi_subagent import run_roi_calculation
 from agents.ranking_agent import (
     build_summary,
     create_ranking_agent,
@@ -100,7 +100,6 @@ async def score_single_title(
     brand_agent: LlmAgent,
     cultural_agent: LlmAgent,
     business_agent: LlmAgent,
-    roi_agent: LlmAgent,
     ranking_agent: LlmAgent,
     second_run: bool = False,
 ) -> dict:
@@ -267,7 +266,6 @@ async def run_consistency_check(
     brand_agent: LlmAgent,
     cultural_agent: LlmAgent,
     business_agent: LlmAgent,
-    roi_agent: LlmAgent,
 ) -> dict:
     """
     Runs a second scoring pass on a sample of titles and compares dimension
@@ -305,7 +303,6 @@ async def run_consistency_check(
             brand_agent=brand_agent,
             cultural_agent=cultural_agent,
             business_agent=business_agent,
-            roi_agent=roi_agent,
             ranking_agent=None,  # not used in second_run=True path
             second_run=True,
         )
@@ -346,7 +343,6 @@ async def score_full_slate() -> tuple[list[dict], dict]:
     brand_agent = create_brand_creative_agent(SUB_AGENT_MODEL)
     cultural_agent = create_cultural_talent_agent(SUB_AGENT_MODEL)
     business_agent = create_business_roi_agent(SUB_AGENT_MODEL)
-    roi_agent = create_roi_subagent(SUB_AGENT_MODEL)
     ranking_agent = create_ranking_agent(RANKING_MODEL)
     sway_agent = create_sway_checker(SWAY_MODEL)
 
@@ -360,7 +356,6 @@ async def score_full_slate() -> tuple[list[dict], dict]:
             brand_agent=brand_agent,
             cultural_agent=cultural_agent,
             business_agent=business_agent,
-            roi_agent=roi_agent,
             ranking_agent=ranking_agent,
         )
 
@@ -390,7 +385,6 @@ async def score_full_slate() -> tuple[list[dict], dict]:
         brand_agent=brand_agent,
         cultural_agent=cultural_agent,
         business_agent=business_agent,
-        roi_agent=roi_agent,
     )
 
     # Attach consistency results to the relevant title results
