@@ -2,14 +2,17 @@
 orchestrator.py
 Opportunity Scorer -- ADK Orchestrator Agent.
 
-Routes each title from the slate in parallel to:
+Iterates the slate sequentially (one title at a time, to stay within
+free-tier rate limits). For each title, runs four cluster agents
+concurrently via asyncio.gather:
   - audience_market_agent  (D1, D9)
   - brand_creative_agent   (D2, D5, D8, D10)
   - cultural_talent_agent  (D3, D7)
   - business_roi_agent     (D4, D6)
-  - roi_subagent           (proprietary in-film integration formula -- parallel, orchestrator level)
+then computes the in-film integration / ROI score deterministically
+(run_roi_calculation -- a formula, not an agent call).
 
-After all five return, passes aggregated results to the ranking_agent
+After the four agents return, passes aggregated results to the ranking_agent
 which applies the 65-point gate, consistency check, and low-confidence flag.
 
 Stage 5 additions:
@@ -87,7 +90,7 @@ def load_brand_profile() -> dict:
 
 # ---------------------------------------------------------------------------
 # Per-title scoring pipeline
-# Runs all five agents in parallel for one title, then aggregates.
+# Runs four cluster agents concurrently for one title, then aggregates (ROI is a deterministic formula).
 # ---------------------------------------------------------------------------
 
 async def score_single_title(
@@ -103,7 +106,7 @@ async def score_single_title(
 ) -> dict:
     """
     Scores one title end-to-end:
-      1. Run four cluster agents + ROI sub-agent in parallel
+      1. Run four cluster agents concurrently; compute ROI deterministically.
       2. Parse outputs
       3. Aggregate and apply gate via ranking agent
       4. Return final scored result dict
